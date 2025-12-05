@@ -11,12 +11,12 @@ It is designed for students, researchers, and engineers who want a practical and
 
 [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/Edusemi-v4x/#-ライセンス--license)
 
-> 🆕 **Check the latest updates in the [ChangeLog](../revision_history.md).**  
-> *Review all recent modifications in the [ChangeLog](../revision_history.md).*
+> 🆕 **Check the latest updates in the [ChangeLog]({{ '/ChangeLog' | relative_url }}).**  
+> *Review all recent modifications in the [ChangeLog]({{ '/ChangeLog' | relative_url }}).*
 
 <p align="right">
   <img src="https://img.shields.io/badge/Last%20Update-2025--08--15-orange" alt="Last Update">
-  <a href="../revision_history.md">
+  <a href="{{ '/ChangeLog' | relative_url }}">
     <img src="https://img.shields.io/badge/View-ChangeLog-blue?logo=markdown" alt="View ChangeLog">
   </a>
 </p>
