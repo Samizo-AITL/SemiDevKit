@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SemiDevKit/index.md
+title: SemiDevKit
 ---
 
 ----
