@@ -44,8 +44,8 @@ It is designed for students, researchers, and engineers who want a practical and
   (tox / Na / Vfb / μ0 / L / W)
 
 ### 🔹 SPICE Simulation
-- DC characteristics (Id–Vd, Id–Vg)  
-- AC characteristics (Cgg–Vg)  
+- DC characteristics (Vg-Id, Vd-Id)  
+- AC characteristics (Vg-Cgg)  
 - Device dimension scaling (L/W sweep)  
 - Reliability degradation (NBTI & HCI)
 
