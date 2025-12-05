@@ -1,3 +1,10 @@
+---
+layout: default
+title: SemiDevKit/README.md
+---
+
+----
+
 # SemiDevKit
 ### *Open Educational Toolkit for Semiconductor Device Modeling, SPICE Simulation, Reliability Analysis, and VLSI Physical Design*
 
