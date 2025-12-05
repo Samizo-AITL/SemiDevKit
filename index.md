@@ -16,7 +16,7 @@ It is designed for students, researchers, and engineers who want a practical and
 
 [![Back to Samizo-AITL Portal](https://img.shields.io/badge/Back%20to%20Samizo--AITL%20Portal-brightgreen)](https://samizo-aitl.github.io/en) 
 
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/Edusemi-v4x/#-ライセンス--license)
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#-ライセンス--license)
 
 > 🆕 **Check the latest updates in the [ChangeLog](https://samizo-aitl.github.io/SemiDevKit/ChangeLog).**  
 > *Review all recent modifications in the [ChangeLog](https://samizo-aitl.github.io/SemiDevKit/ChangeLog).*
