@@ -162,7 +162,7 @@ Including:
 
 ## 📄 **License**
 
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/Edusemi-v4x/#-license)
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#-license)
 
 > SemiDevKit adopts a hybrid licensing approach tailored to the nature of each component—source code, text materials, and graphical content.
 
@@ -179,4 +179,4 @@ Including:
 
 > Suggestions, improvements, and discussions are welcome via GitHub Discussions.
 
-[![💬 GitHub Discussions](https://img.shields.io/badge/💬%20GitHub-Discussions-brightgreen?logo=github)](https://github.com/Samizo-AITL/Edusemi-v4x/discussions)
+[![💬 GitHub Discussions](https://img.shields.io/badge/💬%20GitHub-Discussions-brightgreen?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/discussions)
