@@ -42,7 +42,7 @@ It is designed for students, researchers, and engineers who want a practical and
 
 ### 🔹 Device Physics
 - 1D Poisson & Drift–Diffusion solvers  
-- MOSFET Id–Vd / Id–Vg characteristics  
+- MOSFET Vg-Id / Vd-Id characteristics  
 - Ferroelectric P–E modeling (Landau–Khalatnikov)  
 
 ### 🔹 Compact Modeling (BSIM4)
@@ -51,7 +51,7 @@ It is designed for students, researchers, and engineers who want a practical and
   (tox / Na / Vfb / μ0 / L / W)
 
 ### 🔹 SPICE Simulation
-- DC characteristics (Id–Vd, Id–Vg)  
+- DC characteristics (Vg-Id, Vd-Id)  
 - AC characteristics (Cgg–Vg)  
 - Device dimension scaling (L/W sweep)  
 - Reliability degradation (NBTI & HCI)
