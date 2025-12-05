@@ -35,7 +35,7 @@ It is designed for students, researchers, and engineers who want a practical and
 
 ### 🔹 Device Physics
 - 1D Poisson & Drift–Diffusion solvers  
-- MOSFET Id–Vd / Id–Vg characteristics  
+- MOSFET Vg-Id / Vd-Id characteristics  
 - Ferroelectric P–E modeling (Landau–Khalatnikov)  
 
 ### 🔹 Compact Modeling (BSIM4)
