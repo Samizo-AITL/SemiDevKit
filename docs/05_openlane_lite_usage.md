@@ -1,3 +1,10 @@
+---
+layout: default
+title: openlane_lite_usage
+---
+
+----
+
 # 5_openlane_lite_usage.md
 
 # SemiDevKit — OpenLane‑Lite Usage Guide
