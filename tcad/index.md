@@ -11,9 +11,25 @@ title: tcad
 
 ##  Links
 
+### 📁 Top-level (TCAD)
+
 | Language | GitHub Pages 🌐 | GitHub 💻 |
 |----------|----------------|-----------|
 | 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/tcad/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad) |
+
+---
+
+### 📂 Submodules (TCAD Tools)
+
+#### 🔸 tcad_playground — MOSFET & Semiconductor Physics
+| GitHub Pages 🌐 | GitHub 💻 |
+|----------------|-----------|
+| [https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground/](https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground/) | [https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad/tcad_playground](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad/tcad_playground) |
+
+#### 🔸 tcad_playground_pzt — Ferroelectric (PZT / HfO₂) Simulation
+| GitHub Pages 🌐 | GitHub 💻 |
+|----------------|-----------|
+| [https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground_pzt/](https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground_pzt/) | [https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad/tcad_playground_pzt](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad/tcad_playground_pzt) |
 
 ---
 
