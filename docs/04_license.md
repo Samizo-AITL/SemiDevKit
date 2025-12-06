@@ -1,3 +1,10 @@
+---
+layout: default
+title: license
+---
+
+----
+
 # 4_license.md
 
 # SemiDevKit — License Guide
