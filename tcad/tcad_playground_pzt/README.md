@@ -179,6 +179,51 @@ Workflow matches Samizo-Lab methodology:
 
 ---
 
+---
+
+## 📈 Example Figures (PZT Ferroelectric Playground)
+
+Below are sample outputs generated from the `tcad_playground_pzt` module,  
+illustrating how film thickness, composition, and annealing temperature  
+influence ferroelectric polarization behavior.
+
+---
+
+### ▶ P–E Hysteresis Loop (Anneal Temperature Variation)
+
+This example shows how the polarization–electric field hysteresis loop shifts  
+with annealing temperature. A peak polarization typically appears near the  
+optimal crystallization temperature.
+
+![P–E Hysteresis vs Anneal](/assets/tcad_playground_pzt/hysteresis_anneal.png)
+
+---
+
+### ▶ Pm 3D Surface Map (Composition × Anneal Temperature)
+
+A smooth 3D visualization of the spontaneous polarization \( P_m \),  
+sweeping both **annealing temperature** and **composition** (Zr/Ti ratio).  
+This helps explore design spaces prior to TCAD or experimental work.
+
+![Pm 3D Surface Map](/assets/tcad_playground_pzt/pm_3d_surface.png)
+
+---
+
+### ▶ S–E Butterfly Curve (Strain–Electric Field)
+
+The classic butterfly-shaped strain–electric field curve,  
+modeled using a simplified piezoelectric formulation:
+
+$$
+S = d_{33} \cdot E \cdot \text{sign}(P)
+$$
+
+Illustrates the nonlinear electromechanical response of PZT films.
+
+![Butterfly Curve](/assets/tcad_playground_pzt/butterfly.png)
+
+---
+
 ## 📄 License
 
 | Item | License | Description |
