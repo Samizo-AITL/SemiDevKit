@@ -183,8 +183,6 @@ The framework enables exploration of:
 
 # 📎 Reference Examples (Screenshots)
 
-以下は **BSIM4_ANALYZER_DIM** によって生成される代表的な解析結果です。
-
 ---
 
 ## ■ Vg-Id (L Sweep, NMOS, Linear)
