@@ -14,7 +14,7 @@ It is designed for students, researchers, and engineers who want a practical and
 > *Review all recent modifications in the [ChangeLog](https://samizo-aitl.github.io/SemiDevKit/ChangeLog).*
 
 <p align="right">
-  <img src="https://img.shields.io/badge/Last%20Update-2025--12--06-orange" alt="Last Update">
+  <img src="https://img.shields.io/badge/Last%20Update-2025--12--07-orange" alt="Last Update">
   <a href="https://samizo-aitl.github.io/SemiDevKit/ChangeLog">
     <img src="https://img.shields.io/badge/View-ChangeLog-blue?logo=markdown" alt="View ChangeLog">
   </a>
