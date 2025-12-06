@@ -72,7 +72,7 @@ python mosfet_vgid_tox_sweep_1d.py
 python moscap_cv_1d.py
 ```
 
-![MOSCAP C–V](fig/moscape_cv_example.png)
+![MOSCAP C–V](fig/moscape_cv.png)
 
 ---
 
