@@ -1,3 +1,10 @@
+---
+layout: default
+title: troubleshooting
+---
+
+----
+
 # 6_troubleshooting.md
 
 # SemiDevKit — Troubleshooting Guide
