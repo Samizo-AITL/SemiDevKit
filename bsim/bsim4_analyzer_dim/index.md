@@ -203,18 +203,21 @@ The framework enables exploration of:
 
 ---
 
-## ■ Vg-Id (L Sweep, NMOS, Linear)
-![Id–Vg NMOS L-sweep](/assets/bsim4_analyzer_dim/nmos_vgid.png)
+## ■ Vg–Id (L Sweep, NMOS, Linear)
+
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/bsim4_analyzer_dim/nmos_vgid.png" width="80%">
 
 ---
 
-## ■ Vd-Id (L Sweep, NMOS, Linear)
-![Id–Vd NMOS L-sweep](/assets/bsim4_analyzer_dim/nmos_vdid.png)
+## ■ Vd–Id (L Sweep, NMOS, Linear)
+
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/bsim4_analyzer_dim/nmos_vdid.png" width="80%">
 
 ---
 
 ## ■ L vs. Id_sat (NMOS)
-![Id_sat vs L NMOS](/assets/bsim4_analyzer_dim/nmos_idsat.png)
+
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/bsim4_analyzer_dim/nmos_idsat.png" width="80%">
 
 ---
 
