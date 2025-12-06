@@ -66,18 +66,30 @@ It is designed for students, researchers, and engineers who want a practical and
 ## 📁 Quick Navigation (Repository Modules)
 
 SemiDevKit is organized into several major learning modules.  
-The following table gives **direct links** to each folder in this repository:
+Use the badges below to jump directly to each folder.
 
-| Area | Folder (GitHub link) | Description |
-|------|----------------------|-------------|
-| **Device Physics / TCAD** | [`tcad/`](tcad/) | TCAD-style educational material, device-physics oriented tools and examples |
-| **Compact Modeling & SPICE** | [`bsim/`](bsim/) | BSIM4-based compact modeling, SPICE analysis utilities, DC/CV/dimension/reliability analyzers |
-| **Physical Design (OpenLane-Lite)** | [`openlane/openlane-lite/`](openlane/openlane-lite/) | Minimal OpenLane-Lite implementation with verified `spm.gds` flow (Dec 2025) |
-| **Documentation** | [`docs/`](docs/) | High-level docs, tutorials, and math/flow descriptions for SemiDevKit |
-| **Site Assets** | [`assets/`](assets/) | CSS and shared assets for GitHub Pages site rendering |
-| **Jekyll Layouts** | [`_includes/`](./_includes) / [`_layouts/`](./_layouts) | Jekyll templates used for the public documentation site |
+### 🔸 Device Physics / TCAD
+[![Pages](https://img.shields.io/badge/GitHub%20Pages-tcad-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/tcad/)
+[![Repo](https://img.shields.io/badge/GitHub-tcad-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad)
 
-You can browse each module directly on GitHub by clicking the links above.
+### 🔸 Compact Modeling & SPICE (BSIM4 Suite)
+[![Pages](https://img.shields.io/badge/GitHub%20Pages-bsim-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/bsim/)
+[![Repo](https://img.shields.io/badge/GitHub-bsim-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim)
+
+### 🔸 Physical Design (OpenLane-Lite)
+[![Pages](https://img.shields.io/badge/GitHub%20Pages-OpenLane--Lite-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/openlane/openlane-lite/)
+[![Repo](https://img.shields.io/badge/GitHub-OpenLane--Lite-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane/openlane-lite)
+
+### 🔸 Documentation
+[![Pages](https://img.shields.io/badge/GitHub%20Pages-docs-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/docs/)
+[![Repo](https://img.shields.io/badge/GitHub-docs-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/docs)
+
+### 🔸 Site Assets
+[![Repo](https://img.shields.io/badge/GitHub-assets-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/assets)
+
+### 🔸 Jekyll Layouts
+[![Repo](https://img.shields.io/badge/GitHub-_includes-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/_includes)
+[![Repo](https://img.shields.io/badge/GitHub-_layouts-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/_layouts)
 
 ---
 
