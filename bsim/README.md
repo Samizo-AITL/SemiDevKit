@@ -35,6 +35,39 @@ bsim/
 └── bsim4_analyzer_reliability/ # NBTI / HCI degradation simulation
 ```
 
+### 🔸 1. Paramus — BSIM4 Parameter Extraction Engine
+| GitHub Pages 🌐 | GitHub 💻 |
+|----------------|-----------|
+|　https://samizo-aitl.github.io/SemiDevKit/bsim/Paramus/ | https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/Paramus |
+
+---
+
+### 🔸 2. bsim4_analyzer_dc — DC Characteristics (Vg–Id / Vd–Id)
+| GitHub Pages 🌐 | GitHub 💻 |
+|----------------|-----------|
+| https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_dc/ | https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_dc |
+
+---
+
+### 🔸 3. bsim4_analyzer_cv — CV Characteristics (Vg–Cgg etc.)
+| GitHub Pages 🌐 | GitHub 💻 |
+|----------------|-----------|
+| https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_cv/ | https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_cv |
+
+---
+
+### 🔸 4. bsim4_analyzer_dim — L/W Scaling Analysis
+| GitHub Pages 🌐 | GitHub 💻 |
+|----------------|-----------|
+| https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_dim/ | https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_dim |
+
+---
+
+### 🔸 5. bsim4_analyzer_reliability — NBTI / HCI Aging Simulation
+| GitHub Pages 🌐 | GitHub 💻 |
+|----------------|-----------|
+| https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_reliability/ | https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_reliability |
+
 ---
 
 ## 🚀 How to Use
