@@ -1,3 +1,10 @@
+---
+layout: default
+title: changelog
+---
+
+----
+
 # 10_changelog.md
 # SemiDevKit — ChangeLog / Release Notes
 
