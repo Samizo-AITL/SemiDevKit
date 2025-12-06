@@ -1,3 +1,10 @@
+---
+layout: default
+title: install
+---
+
+----
+
 # 1. Installation Guide (SemiDevKit)
 
 This document describes how to install and prepare the environment for **SemiDevKit**, including TCAD playgrounds, BSIM4 analyzers, and OpenLane-Lite.
