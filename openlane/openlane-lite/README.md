@@ -183,6 +183,14 @@ inside the standard cells.
 
 ---
 
+### ▶ GTKWave View (RTL Simulation Output)
+
+The following screenshot shows the `inv_tb.vcd` waveform displayed in **GTKWave**, generated from the example inverter testbench.
+
+![GTKWave View](/assets/openlane-lite/gtkwave.png)
+
+---
+
 ## 📄 License
 
 - Source code & scripts: **MIT License**  
