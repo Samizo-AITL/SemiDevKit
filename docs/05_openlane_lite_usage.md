@@ -171,6 +171,3 @@ The included flow uses a minimal subset of PDK files for educational use.
 - OpenLane‑Lite uses a reduced configuration suitable for conceptual and educational flows  
 - GDS output is compatible with common viewers such as KLayout
 
----
-
-End of `5_openlane_lite_usage.md`.
