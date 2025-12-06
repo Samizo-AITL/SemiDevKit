@@ -181,6 +181,27 @@ The framework enables exploration of:
 
 ---
 
+# 📎 Reference Examples (Screenshots)
+
+以下は **BSIM4_ANALYZER_DIM** によって生成される代表的な解析結果です。
+
+---
+
+## ■ Vg-Id (L Sweep, NMOS, Linear)
+![Id–Vg NMOS L-sweep](/assets/bsim4_analyzer_dim/nmos_vgid.png)
+
+---
+
+## ■ Vd-Id (L Sweep, NMOS, Linear)
+![Id–Vd NMOS L-sweep](/assets/bsim4_analyzer_dim/nmos_vdid.png)
+
+---
+
+## ■ L vs. Id_sat (NMOS)
+![Id_sat vs L NMOS](/assets/bsim4_analyzer_dim/nmos_idsat.png)
+
+---
+
 # 🗂 Version
 
 ```
