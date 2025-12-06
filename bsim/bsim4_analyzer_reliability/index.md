@@ -1,3 +1,10 @@
+---
+layout: default
+title: bsim4_analyzer_reliability
+---
+
+----
+
 # 📘 BSIM4 Analyzer Reliability  
 
 ---
