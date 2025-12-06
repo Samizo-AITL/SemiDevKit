@@ -48,6 +48,7 @@ This confirms that **OpenLane-Lite is a fully functional minimal learning flow**
 
 ## 📦 Repository Contents
 
+```
 OpenLane-Lite/
 ├── config/                 # Minimal example config for the flow
 │   ├── config.tcl
@@ -71,6 +72,7 @@ OpenLane-Lite/
 │
 ├── spm.gds                 # Verified GDS output (Dec 2025)
 └── README.md
+```
 
 ---
 
