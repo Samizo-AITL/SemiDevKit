@@ -115,9 +115,7 @@ https://github.com/Samizo-AITL/SemiDevKit
 
 For commercial licensing inquiries:
 
-- GitHub Issues: https://github.com/Samizo-AITL/SemiDevKit/issues
-- Email: shin3t72@gmail.com
-
----
-
-End of `4_license.md`.
+| 📌 Item | Details |
+|--------|---------|
+| **Name** | Shinichi Samizo |
+| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
