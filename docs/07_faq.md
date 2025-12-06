@@ -119,5 +119,9 @@ Hybrid license:
 ---
 
 # 9. Contact
-GitHub Issues:
-https://github.com/Samizo-AITL/SemiDevKit/issues
+
+| 📌 Item | Details |
+|--------|---------|
+| **Name** | Shinichi Samizo |
+| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
+
