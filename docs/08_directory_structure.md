@@ -1,3 +1,10 @@
+---
+layout: default
+title: directory_structure
+---
+
+----
+
 # 8_directory_structure.md
 # SemiDevKit — Directory Structure Overview
 
