@@ -1,3 +1,10 @@
+---
+layout: default
+title: ChangeLog
+---
+
+----
+
 # ChangeLog | SemiDevKit
 
 All notable updates to **SemiDevKit** will be documented in this file.  
