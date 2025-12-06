@@ -6,6 +6,14 @@ It preserves the *core essence* of OpenLane while removing heavy components such
 
 ---
 
+##  Links
+
+| Language | GitHub Pages 🌐 | GitHub 💻 |
+|----------|----------------|-----------|
+| 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/openlane/openlane-lite/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane/opnelane-lite) |
+
+---
+
 ## 🎯 Purpose
 
 This repository is intended for:
