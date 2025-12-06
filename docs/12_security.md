@@ -1,3 +1,10 @@
+---
+layout: default
+title: security
+---
+
+----
+
 # 12_security.md
 # SemiDevKit — Security Policy
 
