@@ -1,0 +1,16 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * ============================================================
+
+Warning: Model issue on line 5 :
+  .model nmos130 nmos level=54 version=4.8 capmod=2 toxm=2.3e-9 toxe=2.3e- ...
+unrecognized parameter (nch) - ignored
+
+Doing analysis at TEMP = 125.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 25
+ngspice-45.2 done

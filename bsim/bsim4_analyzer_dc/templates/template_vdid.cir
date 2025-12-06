@@ -1,0 +1,61 @@
+* ============================================================
+*  VDID Template (NMOS / PMOS 共通)
+*  Vds–Id sweep  (Drain sweep)
+* ============================================================
+
+{{MODEL_INCLUDE}}
+
+.param LCH={{LCH}}  WCH={{WCH}}
+.param VG_BIAS={{VG_BIAS}}
+
+.temp {{TEMP}}
+
+* -------------------------
+* Terminal Bias
+* -------------------------
+* NMOS : S=0,   B=0,   VDSRC 0→+VDD
+* PMOS : S=VDD, B=VDD, VDSRC 0→−VDD
+* -------------------------
+
+Vs    s      0   {{S_VOLT}}
+Vb    b      0   {{B_VOLT}}
+
+* Internal Drain node
+VDSRC d_int  s   {{VD_START}}
+
+* Gate bias (固定)
+Vg    g      s   {{VG_BIAS}}
+
+* Device
+M1 d_int g s b {{MODEL_NAME}} L={{LCH}} W={{WCH}}
+
+.options post=2 nomod
+
+.dc VDSRC {{VD_START}} {{VD_STOP}} {{VD_STEP}}
+
+.control
+  set filetype=ascii
+  run
+
+  * --------------------------------------
+  * NMOS : Vds = V(d) - V(s)
+  * PMOS : Vsd = V(s) - V(d)
+  * → Id = Drain 電源電流として i(VDSRC)
+  * --------------------------------------
+
+  if ({{S_VOLT}} > 0)
+    * PMOS
+    let VX = v(s) - v(d_int)     ; = Vsd
+    let IY =  i(VDSRC)           ; PMOS Drain current 正向き
+  else
+    * NMOS
+    let VX = v(d_int) - v(s)     ; = Vds
+    let IY = -i(VDSRC)           ; NMOS Drain current 正向き
+  end
+
+  wrdata {{DAT_PATH}} VX IY
+
+  quit
+.endc
+
+.end

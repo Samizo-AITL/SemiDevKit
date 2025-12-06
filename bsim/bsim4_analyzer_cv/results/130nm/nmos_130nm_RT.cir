@@ -1,0 +1,24 @@
+* ----------------------------------------------
+*  template_cv.cir  (valid for ngspice BSIM4)
+*  MOSFET C–V解析テンプレート（Pythonが埋め込み生成）
+* ----------------------------------------------
+
+.include "models/nmos130.sp"
+
+.param LCH=0.13u
+.param WCH=1u
+.param TOXE=2e-9
+.param VSB=0.0
+
+Vx   x   0       0
+Vb   b   x       0.0
+Vgdc g   x       0
+
+M1   x   g   x   b   nmos130  L=LCH  W=WCH
+
+.temp 25
+
+.dc Vgdc 0.0 1.2 0.01
+.print dc V(g) @M1[cgg] @M1[cgs] @M1[cgd] @M1[cgb]
+
+.end

@@ -1,0 +1,61 @@
+* ============================================================
+*  VDID Template (NMOS / PMOS 共通)
+*  Vds–Id sweep  (Drain sweep)
+* ============================================================
+
+.include "C:\Users\Lenovo\Documents\bsim4_analyzer_dc\models\nmos130.sp"
+
+.param LCH=1.3e-07  WCH=1e-06
+.param VG_BIAS=1.2
+
+.temp 125.0
+
+* -------------------------
+* Terminal Bias
+* -------------------------
+* NMOS : S=0,   B=0,   VDSRC 0→+VDD
+* PMOS : S=VDD, B=VDD, VDSRC 0→−VDD
+* -------------------------
+
+Vs    s      0   0.0
+Vb    b      0   0.0
+
+* Internal Drain node
+VDSRC d_int  s   0.0
+
+* Gate bias (固定)
+Vg    g      s   1.2
+
+* Device
+M1 d_int g s b nmos130 L=1.3e-07 W=1e-06
+
+.options post=2 nomod
+
+.dc VDSRC 0.0 1.2 0.05
+
+.control
+  set filetype=ascii
+  run
+
+  * --------------------------------------
+  * NMOS : Vds = V(d) - V(s)
+  * PMOS : Vsd = V(s) - V(d)
+  * → Id = Drain 電源電流として i(VDSRC)
+  * --------------------------------------
+
+  if (0.0 > 0)
+    * PMOS
+    let VX = v(s) - v(d_int)     ; = Vsd
+    let IY =  i(VDSRC)           ; PMOS Drain current 正向き
+  else
+    * NMOS
+    let VX = v(d_int) - v(s)     ; = Vds
+    let IY = -i(VDSRC)           ; NMOS Drain current 正向き
+  end
+
+  wrdata results/130nm/vdid/130nm_nmos_vdid_HT.dat VX IY
+
+  quit
+.endc
+
+.end

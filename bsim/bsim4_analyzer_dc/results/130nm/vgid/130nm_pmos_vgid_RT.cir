@@ -1,0 +1,44 @@
+* ============================================================
+*  VGID Template (NMOS / PMOS 共通)
+* ============================================================
+
+.include "C:/Users/Lenovo/Documents/bsim4_analyzer_dc/models/pmos130.sp"
+
+.param LCH=1.3e-07  WCH=1e-06
+.temp 25.0
+
+* -------------------------
+* Terminal voltages
+* -------------------------
+Vd   d      0   0.0
+Vs   s      0   1.2
+Vb   b      0   1.2
+
+* Gate sweep source
+Vg   g      s   0
+
+M1 d g s b pmos130 L=1.3e-07 W=1e-06
+
+.options post=2 nomod
+.dc Vg 0.0 -1.2 -0.05
+
+.control
+  set filetype=ascii
+  run
+
+  let VX = v(g) - v(s)
+
+  * ========== Id の正方向を MOS の Drain→Source に統一 ==========
+  if ( 1.2 == 0 )
+    * NMOS: Source=0V, Drain=0.0
+    let IY = -i(Vd)
+  else
+    * PMOS: Source=1.2V, Drain=0V
+    let IY =  i(Vs)
+  end
+
+  wrdata C:/Users/Lenovo/Documents/bsim4_analyzer_dc/results/130nm/vgid/130nm_pmos_vgid_RT.dat VX IY
+  quit
+.endc
+
+.end

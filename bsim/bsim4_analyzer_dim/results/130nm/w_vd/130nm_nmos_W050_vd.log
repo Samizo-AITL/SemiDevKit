@@ -1,0 +1,15 @@
+
+Checking parameters for BSIM 4.8 model 130nm_nmos_w050
+Warning: Rdswmin at current temperature = -0.0133267 is negative. Set to zero.
+
+Note: No compatibility mode selected!
+
+
+Circuit: * ============================================================
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 61
+ngspice-45.2 done

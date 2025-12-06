@@ -1,0 +1,79 @@
+* ============================================================
+*  VGID Template (NMOS / PMOS 共通)
+*  BSIM4 DIM: Id–Vg Sweep
+*  - Python 側から {{…}} が埋め込まれる前提
+* ============================================================
+
+.include "C:/Users/Lenovo/Documents/bsim4_analyzer_dim/models/130nm_pmos_w050.sp"
+
+* -------------------------
+* Geometry / Temperature
+* -------------------------
+.param LCH = 1.3e-07
+.param WCH = 5e-07
+.temp 25.0
+
+* -------------------------
+* Terminal voltages
+*   - NMOS : D = VDD, S = 0,   B = 0
+*   - PMOS : D = 0,   S = VDD, B = VDD
+*   （いずれも Python 側で 1.15, 1.2, 1.2 を設定）
+* -------------------------
+Vd   d      0      1.15
+Vs   s      0      1.2
+Vb   b      0      1.2
+
+* Gate sweep source (gate vs source)
+Vg   g      s      0
+
+* MOS Device
+*   - L/W はパラメータ LCH/WCH を使用
+*   - 130nm_pmos_w050 は Python 側で L/W 専用モデル名に差し替え
+M1  d  g  s  b  130nm_pmos_w050  L=LCH  W=WCH
+
+.options post=2 nomod
+
+* Vg を掃引（NMOS: 0→VDD, PMOS: 0→-VDD）
+.dc Vg 0.0 -1.2 -0.01
+
+.control
+  set filetype=ascii
+  run
+
+  * -------------------------------------
+  * VX = Vgs  (v(g) - v(s))
+  * -------------------------------------
+  let VX = v(g) - v(s)
+
+  * -------------------------------------
+  * Id (Drain→Source の向きを正方向に統一)
+  *
+  * NMOS:
+  *   Source = 0V  → Id = -I(Vd)
+  *
+  * PMOS:
+  *   Source = VDD → Id =  I(Vs)
+  *
+  * 1.2 は Python 側で
+  *   - NMOS: 0
+  *   - PMOS: VDD
+  * に置換される前提
+  * -------------------------------------
+  if ( 1.2 == 0 )
+    * NMOS
+    let IY = -i(Vd)
+  else
+    * PMOS
+    let IY =  i(Vs)
+  end
+
+  * -------------------------------------
+  * CSV (ASCII) 出力
+  *   1列目: VX (= Vgs)
+  *   2列目: IY (= Id, Ds 向き正)
+  * -------------------------------------
+  wrdata results/130nm/w_vg/130nm_pmos_W050_vg.dat  VX  IY
+  quit
+.endc
+
+.end

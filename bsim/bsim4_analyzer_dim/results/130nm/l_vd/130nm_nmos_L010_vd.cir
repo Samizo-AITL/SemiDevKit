@@ -1,0 +1,84 @@
+* ============================================================
+*  VDID Template (NMOS / PMOS 共通)
+*  BSIM4 DIM : Id–Vd (Drain sweep)
+* ============================================================
+
+.include "C:/Users/Lenovo/Documents/bsim4_analyzer_dim/models/130nm_nmos_l010.sp"
+
+.param LCH      = 1e-07
+.param WCH      = 1e-06
+.param VG_BIAS  = 1.2
+
+.temp 25.0
+
+* -------------------------
+* Terminal Bias
+* -------------------------
+* NMOS :
+*   S = 0V
+*   B = 0V
+*   Drain sweep: 0 → +VDD
+*
+* PMOS :
+*   S = VDD
+*   B = VDD
+*   Drain sweep: 0 → –VDD
+* -------------------------
+
+Vs     s      0     0.0
+Vb     b      0     0.0
+
+* Drain sweep source
+VDSRC  d_int  s     0.0
+
+* Gate bias
+Vg     g      s     1.2
+
+* MOS Device
+M1  d_int  g  s  b  130nm_nmos_l010  L=LCH  W=WCH
+
+.options post=2 nomod
+.dc VDSRC 0.0 1.2 0.02
+
+.control
+  set filetype=ascii
+  run
+
+  * ------------------------------------------------
+  * Current / Voltage Definitions
+  *
+  *  Id (positive when flowing Drain → Source)
+  *
+  *  NMOS :
+  *     Id = -I(VDSRC)
+  *     Vds = V(d) - V(s)
+  *
+  *  PMOS :
+  *     Id = +I(VDSRC)
+  *     Vds = V(d) - V(s)   (負になるが Id と整合する）
+  *
+  *  → VX : Drain-Source Voltage (Vds)
+  *  → IY : Drain current (positive = Drain→Source)
+  * ------------------------------------------------
+
+  if ( 0.0 > 0 )
+    * PMOS
+    let VX =  v(d_int) - v(s)     ; Vd - Vs  (PMOSでは負になる)
+    let IY =  i(VDSRC)            ; PMOS Id
+  else
+    * NMOS
+    let VX =  v(d_int) - v(s)     ; Vd - Vs
+    let IY = -i(VDSRC)            ; NMOS Id
+  end
+
+  * ------------------------------------------------
+  * Save as ASCII CSV
+  *   col1 : VX = Vds
+  *   col2 : IY = Id (D → S 正方向)
+  * ------------------------------------------------
+  wrdata results/130nm/l_vd/130nm_nmos_L010_vd.dat  VX  IY
+
+  quit
+.endc
+
+.end

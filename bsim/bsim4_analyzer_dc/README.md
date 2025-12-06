@@ -1,0 +1,213 @@
+# 📘 BSIM4_ANALYZER_DC
+**Automated DC Analysis Tool for BSIM4 MOSFET Models (Vg–Id / Vd–Id)**
+
+This tool was originally developed for semiconductor device engineering education,  
+but is also designed with **future commercial MOSFET parameter analysis applications** in mind.
+
+The system currently supports **130nm CMOS (NMOS/PMOS)**.  
+The folder `results/90nm/` is intentionally empty and reserved for **future feature expansion**.  
+Extending the current 130nm analysis flow to 90nm is straightforward.
+
+---
+
+# 📚 Features
+
+- ✔ **Automated analysis pipeline:** BSIM4 MOS model × ngspice × Python  
+- ✔ **DC characteristics for NMOS/PMOS (130nm):** Vg–Id (VGID) / Vd–Id (VDID)  
+- ✔ **Automatic extraction of key parameters:** Vth, gmmax, Idlin, Idsat  
+- ✔ **Auto-generated log/lin PNG plots**  
+- ✔ Suitable for **education, compact modeling research, and commercial analysis tools**  
+- ✔ Easily extendable to **90nm** using template duplication
+
+---
+
+# 📁 Directory Structure
+
+```
+BSIM4_ANALYZER_DC/
+├── models/
+│   ├── nmos130.sp
+│   └── pmos130.sp
+│
+├── templates/
+│   ├── template_vgid.cir
+│   └── template_vdid.cir
+│
+├── run/
+│   ├── run_vgid.py
+│   └── run_vdid.py
+│
+├── plot/
+│   ├── plot_vgid.py
+│   └── plot_vdid.py
+│
+├── results/
+│   ├── 130nm/
+│   │   ├── vgid/
+│   │   └── vdid/
+│   └── 90nm/           # ← Reserved for future expansion
+│
+├── bsim4.out
+└── README.md
+```
+
+---
+
+# 🚀 Usage
+
+## ■ Requirements
+
+- Python **3.10+**
+- ngspice  
+- Required Python packages:
+  ```
+  numpy
+  matplotlib
+  pandas   (optional)
+  ```
+
+---
+
+## ■ Running Simulations
+
+### ● Vg–Id (VGID)
+```
+python run/run_vgid.py
+```
+
+### ● Vd–Id (VDID)
+```
+python run/run_vdid.py
+```
+
+---
+
+## ■ Generating Plots
+
+### ● Vg–Id
+```
+python plot/plot_vgid.py
+```
+
+### ● Vd–Id
+```
+python plot/plot_vdid.py
+```
+
+---
+
+# 📊 Output Files (with extracted parameters)
+
+The tool processes raw ngspice `.dat` files and automatically extracts  
+**important DC parameters**, saving them as CSV files.
+
+---
+
+## ■ VGID Parameter Extraction (Vg–Id)
+
+| Parameter | Description | Method |
+|-----------|-------------|--------|
+| **Vth (gmmax method)** | Threshold voltage | Vg at gm maximum |
+| **gmmax** | Maximum transconductance | max(dId/dVg) |
+
+CSV example:
+```
+device,corner,Vth_gmmax,gmmax
+nmos,HT,0.478,0.00123
+pmos,RT,-0.512,0.00101
+```
+
+---
+
+## ■ VDID Parameter Extraction (Vd–Id)
+
+| Parameter | Description | Method |
+|-----------|-------------|--------|
+| **Idlin** | Linear-region Id | Low-Vd current (e.g., 50 mV) |
+| **Idsat** | Saturation-region Id | High-Vd current (≈ Vdd) |
+
+CSV example:
+```
+device,corner,Idlin,Idsat
+nmos,LT,1.23e-5,2.88e-4
+pmos,RT,-9.88e-6,-2.42e-4
+```
+
+---
+
+# 📦 Output File Types
+
+- `.csv` — extracted parameters  
+- `.dat` — raw ngspice numeric output  
+- `.png` — plots (linear & log scale)  
+- `.cir` — executed circuit input file  
+- `.log` — ngspice log  
+
+Example:
+```
+130nm_nmos_vgid_HT.csv
+130nm_nmos_vgid_log.png
+130nm_pmos_vdid_LT.csv
+130nm_pmos_vgid_lin.png
+```
+
+---
+
+# 🧩 Parameter Extraction Algorithms
+
+## ● Vth (gmmax method)
+1. Load Id–Vg curve  
+2. Compute gm = dId/dVg  
+3. Identify Vg where gm is maximum → **Vth**  
+4. Record gmmax  
+
+---
+
+## ● Idlin / Idsat
+- **Idlin** = Id at low Vd (linear region)  
+- **Idsat** = Id at high Vd (saturation region)  
+(Vd conditions defined in `template_vdid.cir`)
+
+---
+
+# 🔧 90nm Node (Future Extension)
+
+`results/90nm/` is reserved for expansion.  
+To add 90nm support, simply:
+
+- Add 90nm models under `models/`  
+- Duplicate cir templates and rename  
+- Modify run scripts for the new node  
+
+The structure is intentionally built for **future commercial scalability**.
+
+---
+
+# 📄 Hybrid License
+
+This repository adopts a **Hybrid License** model:
+
+| Item | License | Description |
+|------|---------|-------------|
+| **Source Code** | MIT License | Free to use, modify, and redistribute |
+| **Documentation / Text Materials** | CC BY 4.0 | Attribution required |
+| **Figures / Plots / Generated Images** | CC BY-NC 4.0 | Non-commercial use only |
+| **External References** | Original license applies | Cite properly |
+
+---
+
+# 📌 To-Do / Future Development
+
+- Official support for **90nm**  
+- Additional extraction metrics (μeff, λ, ro, Vdsat, gm/Id, etc.)  
+- Temperature sweep support  
+- GUI edition (lecture / commercial use)  
+- Multi-process comparison tool  
+- BSIM parameter fitting engine  
+
+---
+
+# 🤝 Author
+
+**Shinichi Samizo**  
+Samizo-Lab / Device Modeling & TCAD Research

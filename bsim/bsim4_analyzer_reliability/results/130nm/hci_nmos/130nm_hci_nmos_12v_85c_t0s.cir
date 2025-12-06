@@ -1,0 +1,46 @@
+*=========================================================
+*  HCI Stress Measure (NMOS, NGSPICE 45.2)
+*=========================================================
+
+.include "C:/Users/Lenovo/Documents/bsim4_analyzer_reliability/models/nmos130.sp"
+
+.param VGS     = 1.2
+.param VDS_LIN = 0.05
+.param VDS_SAT = 1.2
+.param TEMP    = 85.0
+
+.temp {TEMP}
+
+.op
+
+*-------------------------------------
+* Id_lin
+*-------------------------------------
+Vdd_lin dlin 0 {VDS_LIN}
+Vg_lin  glin 0 {VGS}
+Vs_lin  slin 0 0
+Vb_lin  blin 0 0
+Mlin dlin glin slin blin nmos130 W=1u L=0.13u
+
+*-------------------------------------
+* Id_sat
+*-------------------------------------
+Vdd_sat dsat 0 {VDS_SAT}
+Vg_sat  gsat 0 {VGS}
+Vs_sat  ssat 0 0
+Vb_sat  bsat 0 0
+Msat dsat gsat ssat bsat nmos130 W=1u L=0.13u
+
+.control
+  set filetype=ascii
+  run
+
+  let lin_id = -i(Vdd_lin)
+  let sat_id = -i(Vdd_sat)
+  let Vth = 0
+
+  wrdata 130nm_hci_nmos_12v_85c_t0s.dat Vth lin_id sat_id
+  quit
+.endc
+
+.end

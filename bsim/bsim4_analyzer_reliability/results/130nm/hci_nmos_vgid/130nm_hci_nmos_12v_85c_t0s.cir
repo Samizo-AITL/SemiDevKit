@@ -1,0 +1,29 @@
+*=========================================================
+* VGID Sweep (NMOS)
+*=========================================================
+
+.include "C:/Users/Lenovo/Documents/bsim4_analyzer_reliability/models/nmos130.sp"
+
+.temp 85.0
+
+M1 d g s b nmos130 W=1e-06 L=1.3e-07
+
+Vd d 0 1.2
+Vs s 0 0
+Vb b 0 0
+Vg g s 0
+
+.dc Vg 0 1.2 0.005
+
+.control
+  set filetype=ascii
+  run
+
+  let VX = v(g)-v(s)
+  let IY = abs(i(Vd))
+
+  wrdata 130nm_hci_nmos_12v_85c_t0s_vgid.dat VX IY
+  quit
+.endc
+
+.end

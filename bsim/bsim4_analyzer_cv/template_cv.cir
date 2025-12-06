@@ -1,0 +1,24 @@
+* ----------------------------------------------
+*  template_cv.cir  (valid for ngspice BSIM4)
+*  MOSFET C–V解析テンプレート（Pythonが埋め込み生成）
+* ----------------------------------------------
+
+.include "{MODEL_FILE}"
+
+.param LCH={LCH}
+.param WCH={WCH}
+.param TOXE={TOXE}
+.param VSB={VSB}
+
+Vx   x   0       0
+Vb   b   x       {VSB}
+Vgdc g   x       0
+
+M1   x   g   x   b   {MODEL_NAME}  L=LCH  W=WCH
+
+.temp {TEMP}
+
+.dc Vgdc {VG_START} {VG_STOP} {VG_STEP}
+.print dc V(g) @M1[cgg] @M1[cgs] @M1[cgd] @M1[cgb]
+
+.end

@@ -1,0 +1,33 @@
+*=========================================================
+* VGID Sweep (PMOS, NBTI) -- FIXED, 2-column output
+*=========================================================
+
+{{MODEL_INCLUDE}}
+
+.temp {{TEMP}}
+
+M1 d g s b {{MODEL_NAME}} W={{WCH}} L={{LCH}}
+
+Vd d 0 {{D_VOLT}}
+Vs s 0 {{S_VOLT}}
+Vb b 0 {{B_VOLT}}
+Vg g s 0
+
+.dc Vg {{VG_START}} {{VG_STOP}} {{VG_STEP}}
+
+.control
+  set filetype=ascii
+  run
+
+  let VX = v(g)-v(s)
+  let IY = abs(i(Vd))
+
+  * ======== FIX ========
+  * 出力を HCI と同じ 2 列構造に統一
+  wrdata {{CSV_PATH}} VX IY
+  * =====================
+
+  quit
+.endc
+
+.end

@@ -1,0 +1,46 @@
+*=========================================================
+*  HCI Stress Measure (NMOS, NGSPICE 45.2)
+*=========================================================
+
+.include "{{MODEL_FILE}}"
+
+.param VGS     = {{STRESS_VGS}}
+.param VDS_LIN = 0.05
+.param VDS_SAT = {{STRESS_VDS}}
+.param TEMP    = {{STRESS_TEMP}}
+
+.temp {TEMP}
+
+.op
+
+*-------------------------------------
+* Id_lin
+*-------------------------------------
+Vdd_lin dlin 0 {VDS_LIN}
+Vg_lin  glin 0 {VGS}
+Vs_lin  slin 0 0
+Vb_lin  blin 0 0
+Mlin dlin glin slin blin nmos130 W=1u L=0.13u
+
+*-------------------------------------
+* Id_sat
+*-------------------------------------
+Vdd_sat dsat 0 {VDS_SAT}
+Vg_sat  gsat 0 {VGS}
+Vs_sat  ssat 0 0
+Vb_sat  bsat 0 0
+Msat dsat gsat ssat bsat nmos130 W=1u L=0.13u
+
+.control
+  set filetype=ascii
+  run
+
+  let lin_id = -i(Vdd_lin)
+  let sat_id = -i(Vdd_sat)
+  let Vth = 0
+
+  wrdata {{LOG_FILE}} Vth lin_id sat_id
+  quit
+.endc
+
+.end

@@ -1,0 +1,44 @@
+* ============================================================
+*  VGID Template (NMOS / PMOS 共通)
+* ============================================================
+
+{{MODEL_INCLUDE}}
+
+.param LCH={{LCH}}  WCH={{WCH}}
+.temp {{TEMP}}
+
+* -------------------------
+* Terminal voltages
+* -------------------------
+Vd   d      0   {{D_VOLT}}
+Vs   s      0   {{S_VOLT}}
+Vb   b      0   {{B_VOLT}}
+
+* Gate sweep source
+Vg   g      s   0
+
+M1 d g s b {{MODEL_NAME}} L={{LCH}} W={{WCH}}
+
+.options post=2 nomod
+.dc Vg {{VG_START}} {{VG_STOP}} {{VG_STEP}}
+
+.control
+  set filetype=ascii
+  run
+
+  let VX = v(g) - v(s)
+
+  * ========== Id の正方向を MOS の Drain→Source に統一 ==========
+  if ( {{S_VOLT}} == 0 )
+    * NMOS: Source=0V, Drain={{D_VOLT}}
+    let IY = -i(Vd)
+  else
+    * PMOS: Source={{S_VOLT}}V, Drain=0V
+    let IY =  i(Vs)
+  end
+
+  wrdata {{CSV_PATH}} VX IY
+  quit
+.endc
+
+.end

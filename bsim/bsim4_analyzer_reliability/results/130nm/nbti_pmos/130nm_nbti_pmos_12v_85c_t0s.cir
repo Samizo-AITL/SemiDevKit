@@ -1,0 +1,32 @@
+*=========================================================
+* PMOS NBTI Stress + DC Extraction
+*=========================================================
+
+.include "C:/Users/Lenovo/Documents/bsim4_analyzer_reliability/models/pmos130.sp"
+
+.temp 85.0
+
+* PMOS device
+M1 d g s b pmos130 L=0.13u W=1u
+
+* Bias
+Vd d 0 -1.2
+Vg g 0 -1.2
+Vs s 0 1.2
+Vb b 0 0
+
+* DC operating point
+.op
+
+.control
+  set filetype=ascii
+  run
+
+  let IDLIN = abs(i(Vd))
+  let IDSAT = abs(i(Vd))
+
+  wrdata 130nm_nbti_pmos_12v_85c_t0s.dat 0 IDLIN IDSAT
+  quit
+.endc
+
+.end
