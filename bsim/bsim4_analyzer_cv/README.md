@@ -181,6 +181,28 @@ Possible extensions:
 
 ---
 
+### ■ NMOS C–V Characteristics (130nm, RT)
+
+![NMOS C–V Example](assets/bsim4_analyzer_cv/nmos_cv.png)
+
+- Device: **NMOS (130nm)**
+- Temperature: **RT (Room Temperature)**
+- Behavior: Accumulation → Depletion → Inversion
+- Extracted Parameter: **Cgg vs. Vg**
+
+---
+
+### ■ PMOS C–V Characteristics (130nm, RT)
+
+![PMOS C–V Example](assets/bsim4_analyzer_cv/pmos_cv.png)
+
+- Device: **PMOS (130nm)**
+- Temperature: **RT (Room Temperature)**
+- Sweep Direction: **VDD → 0 V** (realistic PMOS biasing)
+- Extracted Parameter: **Cgg vs. Vg**
+
+---
+
 # 📄 Hybrid License
 
 This project uses a **Hybrid License**:
