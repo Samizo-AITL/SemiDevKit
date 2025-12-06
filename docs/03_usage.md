@@ -1,3 +1,10 @@
+---
+layout: default
+title: usage
+---
+
+----
+
 # 3_usage.md
 
 # SemiDevKit — Usage Guide
