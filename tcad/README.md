@@ -1,5 +1,15 @@
 # 🧪 TCAD Playground — Device Physics Simulation
 
+---
+
+##  Links
+
+| Language | GitHub Pages 🌐 | GitHub 💻 |
+|----------|----------------|-----------|
+| 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/tcad/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad) |
+
+---
+
 This directory contains **lightweight 1D TCAD educational tools** for semiconductor device physics.
 
 These modules help learners understand:
