@@ -103,7 +103,7 @@ showing how physical parameters influence measurable electrical characteristics.
 
 ---
 
-## 👤 Maintainer
+## 👤 Author
 
 | 📌 Item | Details |
 |--------|---------|
