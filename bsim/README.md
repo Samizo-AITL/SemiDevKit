@@ -1,0 +1,66 @@
+# 🧠 BSIM4 Compact Modeling & Device Simulation Suite
+
+This directory contains the **BSIM4-based compact modeling and analysis tools** included in **SemiDevKit**.
+
+These modules provide:
+- ✔ Automatic BSIM4 parameter extraction  
+- ✔ DC / AC / CV circuit simulation  
+- ✔ Device geometry scaling analysis  
+- ✔ Reliability degradation modeling (NBTI / HCI)
+
+---
+
+## 📁 Directory Contents
+
+```
+bsim/
+├── Paramus/                    # BSIM4 model parameter extraction engine
+│
+├── bsim4_analyzer_dc/          # DC characteristics (Vg–Id / Vd–Id)
+│
+├── bsim4_analyzer_cv/          # AC/CV analysis (Vg–Cgg etc.)
+│
+├── bsim4_analyzer_dim/         # L/W scaling analysis
+│
+└── bsim4_analyzer_reliability/ # NBTI / HCI degradation simulation
+```
+
+---
+
+## 🚀 How to Use
+
+Example: Run DC analysis
+```bash
+cd bsim4_analyzer_dc/run
+python run_vd.py
+python run_vg.py
+```
+
+Example: Run reliability simulation
+```bash
+cd bsim4_analyzer_reliability
+python run_nbti.py
+python run_hci.py
+```
+
+---
+
+## 📘 Documentation
+
+Detailed tutorials and formulas are available in:
+
+👉 https://samizo-aitl.github.io/SemiDevKit/
+
+---
+
+## 📄 License
+
+- Code: MIT  
+- Documentation: CC BY / CC BY-SA  
+- Figures: CC BY-NC  
+
+---
+
+## 👤 Maintainer
+
+Shinichi Samizo (Samizo-AITL)
