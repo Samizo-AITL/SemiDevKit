@@ -13,8 +13,7 @@ from **device physics** and **compact modeling (BSIM4)** to **SPICE analysis**, 
 
 It is designed for students, researchers, and engineers who want a practical and lightweight environment to explore the foundations of semiconductor devices and integrated circuit design.
 
-
-[![Back to Samizo-AITL Portal](https://img.shields.io/badge/Back%20to%20Samizo--AITL%20Portal-brightgreen)](https://samizo-aitl.github.io/en) 
+[![Back to Samizo-AITL Portal](https://img.shields.io/badge/Back%20to%20Samizo--AITL%20Portal-brightgreen)](https://samizo-aitl.github.io/en)
 
 [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#-ライセンス--license)
 
@@ -42,8 +41,8 @@ It is designed for students, researchers, and engineers who want a practical and
 
 ### 🔹 Device Physics
 - 1D Poisson & Drift–Diffusion solvers  
-- MOSFET Vg-Id / Vd-Id characteristics  
-- Ferroelectric P–E modeling (Landau–Khalatnikov)  
+- MOSFET Vg–Id / Vd–Id characteristics  
+- Ferroelectric P–E modeling (Landau–Khalatnikov)
 
 ### 🔹 Compact Modeling (BSIM4)
 - Automatic generation of BSIM4 model cards  
@@ -51,48 +50,75 @@ It is designed for students, researchers, and engineers who want a practical and
   (tox / Na / Vfb / μ0 / L / W)
 
 ### 🔹 SPICE Simulation
-- DC characteristics (Vg-Id, Vd-Id)  
-- AC characteristics (Cgg–Vg)  
+- DC characteristics (Vg–Id, Vd–Id)  
+- AC characteristics (Vg–Cgg)  
 - Device dimension scaling (L/W sweep)  
 - Reliability degradation (NBTI & HCI)
 
 ### 🔹 VLSI Physical Design
 - Lightweight OpenLane environment  
-- Minimal example design (inverter)  
+- Minimal example design (inverter / SPM)  
 - Docker / WSL2 ready  
 - Full RTL → GDSII educational flow
 
 ---
 
+## 📁 Quick Navigation (Repository Modules)
+
+SemiDevKit is organized into several major learning modules.  
+The following table gives **direct links** to each folder in this repository:
+
+| Area | Folder (GitHub link) | Description |
+|------|----------------------|-------------|
+| **Device Physics / TCAD** | [`tcad/`](tcad/) | TCAD-style educational material, device-physics oriented tools and examples |
+| **Compact Modeling & SPICE** | [`bsim/`](bsim/) | BSIM4-based compact modeling, SPICE analysis utilities, DC/CV/dimension/reliability analyzers |
+| **Physical Design (OpenLane-Lite)** | [`openlane/openlane-lite/`](openlane/openlane-lite/) | Minimal OpenLane-Lite implementation with verified `spm.gds` flow (Dec 2025) |
+| **Documentation** | [`docs/`](docs/) | High-level docs, tutorials, and math/flow descriptions for SemiDevKit |
+| **Site Assets** | [`assets/`](assets/) | CSS and shared assets for GitHub Pages site rendering |
+| **Jekyll Layouts** | [`_includes/`](./_includes) / [`_layouts/`](./_layouts) | Jekyll templates used for the public documentation site |
+
+You can browse each module directly on GitHub by clicking the links above.
+
+---
+
 ## 🧩 Repository Structure
-```
-SemiDevKit/
-│
-├── device_physics/
-│   ├── TCAD_PLAYGROUND
-│   └── TCAD_PLAYGROUND_PZT
-│
-├── compact_modeling/
-│   └── Paramus
-│
-├── spice_analysis/
-│   ├── BSIM4_ANALYZER_DC
-│   ├── BSIM4_ANALYZER_CV
-│   ├── BSIM4_ANALYZER_DIM
-│   └── BSIM4_ANALYZER_RELIABILITY
-│
-├── physical_design/
-│   └── OpenLane-Lite
-│
-└── docs/
-    └── (Tutorials, theory notes, math formulas, examples)
-```
+
+The conceptual structure of SemiDevKit (mapped to the actual folders above) is:
+
+    SemiDevKit/
+    │
+    ├── device_physics/        (implemented in  tcad/ )
+    │   ├── TCAD_PLAYGROUND
+    │   └── TCAD_PLAYGROUND_PZT
+    │
+    ├── compact_modeling/      (implemented in  bsim/ )
+    │   └── Paramus
+    │
+    ├── spice_analysis/        (also under      bsim/ )
+    │   ├── BSIM4_ANALYZER_DC
+    │   ├── BSIM4_ANALYZER_CV
+    │   ├── BSIM4_ANALYZER_DIM
+    │   └── BSIM4_ANALYZER_RELIABILITY
+    │
+    ├── physical_design/
+    │   └── OpenLane-Lite      (openlane/openlane-lite/)
+    │
+    └── docs/
+        └── (Tutorials, theory notes, math formulas, examples)
+
+For the most up-to-date implementation, please refer to the actual folders:
+
+- Device physics / TCAD → `tcad/`  
+- Compact modeling & SPICE analyzers → `bsim/`  
+- OpenLane-Lite physical design flow → `openlane/openlane-lite/`  
+- Site & documentation → `docs/`, `assets/`, `_includes/`, `_layouts/`
 
 ---
 
 ## 🚀 Getting Started
 
 ### Requirements
+
 - Python 3.10+  
 - NumPy / SciPy / Matplotlib  
 - ngspice  
@@ -102,27 +128,33 @@ SemiDevKit/
 ---
 
 ### Clone the repository
-```bash
-git clone https://github.com/Samizo-AITL/SemiDevKit.git
-cd SemiDevKit
-```
+
+    git clone https://github.com/Samizo-AITL/SemiDevKit.git
+    cd SemiDevKit
 
 ---
 
 ### Example: Run a SPICE DC simulation
-```bash
-cd spice_analysis/BSIM4_ANALYZER_DC/run
-python run_vd.py
-python run_vg.py
-```
+
+    cd bsim/BSIM4_ANALYZER_DC/run
+    python run_vd.py
+    python run_vg.py
+
+(Adjust the path above according to the exact folder structure inside `bsim/`.)
 
 ---
 
 ### Example: Run OpenLane-Lite flow
-```bash
-cd physical_design/OpenLane-Lite
-./docker/run_flow.sh
-```
+
+    cd openlane/openlane-lite
+    ./docker/run_in_docker.sh
+
+This will:
+
+1. Launch the OpenLane 2023 container  
+2. Use the included minimal `spm` design  
+3. Run the full RTL → GDSII flow  
+4. Generate a verified `spm.gds` (Dec 2025 result)
 
 ---
 
@@ -130,11 +162,10 @@ cd physical_design/OpenLane-Lite
 
 Comprehensive tutorials, equations (MathJax), workflows, and examples will be provided under:
 
-```
-docs/
-```
+    docs/
 
 Including:
+
 - Device physics background  
 - Compact modeling theory  
 - SPICE simulation techniques  
@@ -143,7 +174,7 @@ Including:
 
 ---
 
-## 👤 **Author**
+## 👤 Author
 
 > Primary developer and author of this educational toolkit.  
 > Professional background in semiconductor devices and inkjet actuators, creating learning materials that integrate theory, simulation, and practical engineering insights.
@@ -160,14 +191,14 @@ Including:
 
 ---
 
-## 📄 **License**
+## 📄 License
 
 [![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#-license)
 
 > SemiDevKit adopts a hybrid licensing approach tailored to the nature of each component—source code, text materials, and graphical content.
 
 | 📌 Item | License | Description |
-|--------|----------|-------------|
+|--------|---------|-------------|
 | **Source Code** | [**MIT License**](https://opensource.org/licenses/MIT) | Free to use, modify, and redistribute |
 | **Text Materials** | [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/) or [**CC BY-SA 4.0**](https://creativecommons.org/licenses/by-sa/4.0/) | Attribution required; share-alike applies for BY-SA |
 | **Figures & Diagrams** | [**CC BY-NC 4.0**](https://creativecommons.org/licenses/by-nc/4.0/) | Non-commercial use only |
@@ -175,9 +206,8 @@ Including:
 
 ---
 
-## 💬 **Feedback**
+## 💬 Feedback
 
 > Suggestions, improvements, and discussions are welcome via GitHub Discussions.
 
 [![💬 GitHub Discussions](https://img.shields.io/badge/💬%20GitHub-Discussions-brightgreen?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/discussions)
-
