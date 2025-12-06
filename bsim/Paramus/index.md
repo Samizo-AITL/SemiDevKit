@@ -1,3 +1,10 @@
+---
+layout: default
+title: Paramus
+---
+
+----
+
 # ⚙️ Paramus Physical Edition  
 
 ---
