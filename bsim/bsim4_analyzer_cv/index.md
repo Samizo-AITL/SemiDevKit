@@ -200,7 +200,7 @@ Possible extensions:
 
 ### ■ NMOS C–V Characteristics (130nm, RT)
 
-![NMOS C–V Example](/assets/bsim4_analyzer_cv/nmos_cv.png)
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/bsim4_analyzer_cv/nmos_cv.png" width="80%">
 
 - Device: **NMOS (130nm)**
 - Temperature: **RT (Room Temperature)**
@@ -211,7 +211,7 @@ Possible extensions:
 
 ### ■ PMOS C–V Characteristics (130nm, RT)
 
-![PMOS C–V Example](/assets/bsim4_analyzer_cv/pmos_cv.png)
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/bsim4_analyzer_cv/pmos_cv.png" width="80%">
 
 - Device: **PMOS (130nm)**
 - Temperature: **RT (Room Temperature)**
