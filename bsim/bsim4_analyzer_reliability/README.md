@@ -283,7 +283,9 @@ Easily extendable to:
 
 ---
 
-# 👤 Author
+## 👤 Author
 
-**Shinichi Mizomizo**  
-AITL / Project Design Hub  
+| 📌 Item | Details |
+|--------|---------|
+| **Name** | Shinichi Samizo |
+| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
