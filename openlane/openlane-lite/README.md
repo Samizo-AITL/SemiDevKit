@@ -87,6 +87,27 @@ OpenLane-Lite/
 
 ---
 
+## 🎉 Why OpenLane-Lite Is Valuable for Learning
+
+OpenLane-Lite provides a complete miniaturized ASIC design experience without requiring a full industrial setup.
+
+Despite being lightweight, the flow allows users to:
+- ✔ Inspect real chip layouts (GDSII) using KLayout
+- ✔ Verify digital logic behavior through Verilog testbenches
+- ✔ View waveforms interactively with GTKWave
+- ✔ Follow the full RTL → Synthesis → APR → GDSII cycle in a minimal environment
+- ✔ Run entirely on WSL2 or Docker with almost no setup effort
+  
+This makes OpenLane-Lite an ideal platform for:
+- Education & training
+- University coursework
+- Hackathons & workshops
+- Self-study and experimentation
+- Research prototypes
+- In short, you can learn the entire ASIC design flow — from logic simulation to physical layout — in a compact, easy-to-run sandbox.
+
+---
+
 ## ❌ This repository intentionally excludes:
 
 These components are *not provided*, by design, to maintain lightweight operation:
