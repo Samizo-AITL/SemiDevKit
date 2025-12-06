@@ -1,3 +1,10 @@
+---
+layout: default
+title: faq
+---
+
+----
+
 # 7_faq.md
 # SemiDevKit — Frequently Asked Questions (FAQ)
 
