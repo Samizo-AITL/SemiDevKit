@@ -1,3 +1,10 @@
+---
+layout: default
+title: License 
+---
+
+----
+
 # SemiDevKit Hybrid License  
 Version 1.0 — © 2025 Shinichi Samizo / Samizo-AITL
 
