@@ -244,6 +244,40 @@ Useful for extracting Idlin/Idsat and channel-length modulation trends.
 
 ![PMOS VDID](/assets/bsim4_analyzer_dc/pmos_vdid.png)
 
+### ▶ NMOS — Vg–Id (VGID, Linear Region)
+
+Shows the gate-voltage sweep (Id–Vg) under linear Vd bias for NMOS,  
+revealing threshold voltage and mobility temperature dependence.
+
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/bsim4_analyzer_dc/nmos_vgid.png" width="80%">
+
+---
+
+### ▶ NMOS — Vd–Id (VDID)
+
+Illustrates output characteristics (Id–Vd) at fixed Vgs,  
+showing linear-to-saturation transition.
+
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/bsim4_analyzer_dc/nmos_vdid.png" width="80%">
+
+---
+
+### ▶ PMOS — Vg–Id (VGID, Linear Region)
+
+The PMOS transfer curve, plotted with SPICE polarity,  
+showing temperature effects on |Vth| and hole mobility.
+
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/bsim4_analyzer_dc/pmos_vgid.png" width="80%">
+
+---
+
+### ▶ PMOS — Vd–Id (VDID)
+
+PMOS output characteristics (Id–Vd), SPICE-polarity plotted.  
+Useful for extracting Idlin/Idsat and channel-length modulation trends.
+
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/bsim4_analyzer_dc/pmos_vdid.png" width="80%">
+
 ---
 
 These plots serve as **reference examples** for BSIM4 parameter exploration,  
