@@ -179,8 +179,6 @@ Workflow matches Samizo-Lab methodology:
 
 ---
 
----
-
 ## 📈 Example Figures (PZT Ferroelectric Playground)
 
 Below are sample outputs generated from the `tcad_playground_pzt` module,  
