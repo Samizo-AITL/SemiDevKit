@@ -79,6 +79,9 @@ How to report issues securely.
 
 ---
 
-## ✨ Maintainer
-Shinichi Samizo (三溝 真一)  
-AITL / Project Design Hub
+## 👤 Author
+
+| 📌 Item | Details |
+|--------|---------|
+| **Name** | Shinichi Samizo |
+| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
