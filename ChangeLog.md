@@ -12,7 +12,29 @@ This project follows a human-readable, developer-friendly update style.
 
 ---
 
-## [0.1.0] – 2025-02-06
+## [0.1.1] – 2025-12-07
+### Added
+- Added **reference example figures** across all major modules:
+  - TCAD Playground (MOSCAP, MOSFET, Poisson, PZT modules)
+  - BSIM4 analyzers (DC / CV / DIM / Reliability)
+  - OpenLane-Lite (GDS layouts, GTKWave simulation output)
+- Unified image formatting across GitHub Pages:
+  - Absolute URLs for stable rendering
+  - `<img>` tags with `width="80%"` for visual consistency
+- Improved documentation readability in:
+  - `tcad/`  
+  - `bsim/`  
+  - `openlane/openlane-lite/`  
+  - Top-level `README.md`
+
+### Improved
+- Enhanced GitHub Pages compatibility for all images and linked assets  
+- Added badge-style links for subdirectories, improving navigation  
+- Updated Document Index with badge-linked navigation to individual docs
+
+---
+
+## [0.1.0] – 2025-012-06
 ### Added
 - Initial public release of **SemiDevKit**  
 - Integrated project structure for:
@@ -25,7 +47,7 @@ This project follows a human-readable, developer-friendly update style.
 - GitHub Pages site created with:
   - MathJax support
   - Mermaid diagrams
-  - Custom CSS (GitHub-style tables, typography)
+  - Custom CSS (GitHub-style tables & typography)
   - English-only documentation mode
 
 ### Improved
@@ -44,5 +66,4 @@ This project follows a human-readable, developer-friendly update style.
 - Provide example PDK templates for OpenLane-Lite
 - Expand BSIM4 model extraction tutorial
 - Add interactive notebooks (Jupyter/Python)
-
----
+- 
