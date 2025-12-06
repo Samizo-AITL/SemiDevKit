@@ -1,3 +1,10 @@
+---
+layout: default
+title: bsim4_analyzer_dc
+---
+
+----
+
 # 📘 BSIM4_ANALYZER_DC
 
 ---
