@@ -1,1 +1,187 @@
+# OpenLane-Lite  
+Minimal educational version of the OpenLane RTL-to-GDSII flow.
+
+OpenLane-Lite is a simplified, lightweight environment designed for **education, training, and conceptual understanding** of the ASIC physical design flow.  
+It preserves the *core essence* of OpenLane while removing heavy components such as full PDKs and industrial-scale flow automation.
+
+---
+
+## 🎯 Purpose
+
+This repository is intended for:
+
+- Students and engineers learning digital physical design  
+- Lightweight experimentation without a full PDK installation  
+- Demonstrating the RTL → Synthesis → APR → GDSII pipeline  
+- Running inside **WSL2** or **Docker** with minimal setup  
+
+This project **does not** replace the official OpenLane toolchain;  
+instead, it provides a *small, easy-to-run sandbox* suitable for learning and prototyping.
+
+---
+
+## 📌 ✔ NEW (Dec 2025) — Verified GDSII Output Generation
+
+This repository has been **successfully validated** by producing a full GDSII layout using the sample design **spm**.
+
+### ✔ Verification Conditions
+- **Environment**: WSL2 (Ubuntu-20.04)  
+- **Runner**: Docker-based OpenLane container — commit `a35b64a`  
+- **PDK**: sky130A enabled via `volare enable 0fe599b2afb6...`  
+- **Flow**: Full RTL → Synthesis → Floorplan → APR → Signoff → GDS  
+
+### ✔ Result
+The following GDS was generated without errors:
+
+spm.gds
+
+The GDS has been visually verified in **KLayout**, confirming:
+- Standard-cell placement  
+- Global & detailed routing  
+- PDN rails  
+- IO placement  
+- Final DRC/LVS/ANT checks all clean  
+
+This confirms that **OpenLane-Lite is a fully functional minimal learning flow** that can execute a *complete* ASIC physical design pipeline.
+
+---
+
+## 📦 Repository Contents
+
+OpenLane-Lite/
+├── config/                 # Minimal example config for the flow
+│   ├── config.tcl
+│
+├── designs/
+│   └── example_inv/        # Simple inverter sample design
+│       ├── src/
+│       ├── sim/
+│       └── inv.v
+│
+├── docker/
+│   ├── Dockerfile
+│   ├── run_in_docker.sh    # Start flow inside container
+│
+├── docs/
+│   ├── wsl2_setup.md
+│   └── usage.md
+│
+├── scripts/
+│   └── run_flow.sh         # Main script for launching the mini-flow
+│
+├── spm.gds                 # Verified GDS output (Dec 2025)
+└── README.md
+
+---
+
+## ✨ Features
+
+- ✔ Minimal, easy-to-understand OpenLane-like flow  
+- ✔ Standalone example design (**inverter**)  
+- ✔ Docker-based execution for consistency  
+- ✔ WSL2 support (Ubuntu recommended)  
+- ✔ Very small footprint for teaching and experimentation  
+- ✔ **Verified to generate GDSII** using `spm` (Dec 2025)  
+
+---
+
+## ❌ This repository intentionally excludes:
+
+These components are *not provided*, by design, to maintain lightweight operation:
+
+- ❌ **PDKs**  
+- ❌ **Toolchain binaries from OpenLane**  
+- ❌ **Full APR flow automation**  
+- ❌ **Run artifacts (logs, reports, DEF, etc.) except spm.gds**  
+- ❌ **Machine-specific settings**  
+
+Users must install their own **PDK** if they wish to run full backend flows.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+git clone https://github.com/Samizo-AITL/SemiDevKit.git
+cd SemiDevKit/openlane/openlane-lite
+
+---
+
+## 🐳 Option A — Run using Docker (Recommended)
+
+cd docker
+./run_in_docker.sh
+
+This launches a clean minimal environment sufficient for educational usage.
+
+---
+
+## 🪟 Option B — Run inside WSL2
+
+See:
+
+docs/wsl2_setup.md
+
+---
+
+## ▶ Running the Flow
+
+Inside Docker or WSL2:
+
+./scripts/run_flow.sh
+
+This performs:
+
+1. RTL import  
+2. Minimal synthesis  
+3. Floorplan  
+4. APR (simplified)  
+5. Final layout steps  
+
+---
+
+## 🧪 Example Design: Inverter
+
+designs/example_inv/
+
+Useful for:
+- hierarchy understanding  
+- verifying RTL → netlist  
+- small-scale APR experiments  
+
+---
+
+## 📘 Documentation
+
+Located in the `/docs` directory:
+
+- wsl2_setup.md — Setup instructions for WSL2  
+- usage.md — How to run the flow  
+
+More educational materials may be added.
+
+---
+
+## 📄 License
+
+- Source code & scripts: **MIT License**  
+- Documentation: **CC BY 4.0**  
+- Figures / diagrams: **CC BY-NC 4.0**  
+
+---
+
+## 🤝 Acknowledgements
+
+This project draws inspiration from the official **OpenLane** toolchain:  
+https://github.com/The-OpenROAD-Project/OpenLane/
+
+OpenLane-Lite is an independent educational project,  
+not affiliated with the original authors.
+
+---
+
+## 👤 Author
+
+**Shinichi Samizo**  
+Project Design Hub / AITL
 
