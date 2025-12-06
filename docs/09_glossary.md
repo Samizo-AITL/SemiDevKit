@@ -1,3 +1,10 @@
+---
+layout: default
+title: glossary
+---
+
+----
+
 # 9_glossary.md
 # SemiDevKit — Glossary of Technical Terms
 
