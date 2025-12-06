@@ -237,7 +237,8 @@ Ensure Ubuntu is running under **WSL2**.
 
 # 8. Contact
 
-If the problem persists:
+| 📌 Item | Details |
+|--------|---------|
+| **Name** | Shinichi Samizo |
+| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
 
-GitHub Issues:  
-https://github.com/Samizo-AITL/SemiDevKit/issues
