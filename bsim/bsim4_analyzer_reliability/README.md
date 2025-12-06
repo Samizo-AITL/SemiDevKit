@@ -257,7 +257,7 @@ Easily extendable to:
 ---
 
 ### ■ PMOS NBTI : ΔVtg vs Stress Time
-![NBTI dVtg](/assets/bsim4_analyzer_reliability/nbti_dvtg.png)
+![NBTI dVtg](/assets/bsim4_analyzer_reliability/nbit_dvtg.png)
 
 ---
 
