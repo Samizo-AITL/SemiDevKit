@@ -208,7 +208,7 @@ This example shows how the polarization–electric field hysteresis loop shifts
 with annealing temperature. A peak polarization typically appears near the  
 optimal crystallization temperature.
 
-![P–E Hysteresis vs Anneal](/assets/tcad_playground_pzt/hysteresis_anneal.png)
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/tcad_playground_pzt/hysteresis_anneal.png" width="80%">
 
 ---
 
@@ -218,7 +218,7 @@ A smooth 3D visualization of the spontaneous polarization \( P_m \),
 sweeping both **annealing temperature** and **composition** (Zr/Ti ratio).  
 This helps explore design spaces prior to TCAD or experimental work.
 
-![Pm 3D Surface Map](/assets/tcad_playground_pzt/pm_3d_surface.png)
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/tcad_playground_pzt/pm_3d_surface.png" width="80%">
 
 ---
 
@@ -233,7 +233,7 @@ $$
 
 Illustrates the nonlinear electromechanical response of PZT films.
 
-![Butterfly Curve](/assets/tcad_playground_pzt/butterfly.png)
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/tcad_playground_pzt/butterfly.png" width="80%">
 
 ---
 
