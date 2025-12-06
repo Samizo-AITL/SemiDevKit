@@ -39,25 +39,17 @@ bsim/
 [![Pages](https://img.shields.io/badge/GitHub%20Pages-Paramus-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/bsim/Paramus/)
 [![Repo](https://img.shields.io/badge/GitHub-Paramus-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/Paramus)
 
----
-
 ### 🔸 2. bsim4_analyzer_dc — DC Characteristics (Vg–Id / Vd–Id)
 [![Pages](https://img.shields.io/badge/GitHub%20Pages-DC%20Analyzer-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_dc/)
 [![Repo](https://img.shields.io/badge/GitHub-DC%20Analyzer-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_dc)
-
----
 
 ### 🔸 3. bsim4_analyzer_cv — CV Characteristics (Vg–Cgg etc.)
 [![Pages](https://img.shields.io/badge/GitHub%20Pages-CV%20Analyzer-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_cv/)
 [![Repo](https://img.shields.io/badge/GitHub-CV%20Analyzer-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_cv)
 
----
-
 ### 🔸 4. bsim4_analyzer_dim — L/W Scaling Analysis
 [![Pages](https://img.shields.io/badge/GitHub%20Pages-DIM%20Analyzer-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_dim/)
 [![Repo](https://img.shields.io/badge/GitHub-DIM%20Analyzer-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_dim)
-
----
 
 ### 🔸 5. bsim4_analyzer_reliability — NBTI / HCI Aging Simulation
 [![Pages](https://img.shields.io/badge/GitHub%20Pages-Reliability%20Analyzer-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_reliability/)
