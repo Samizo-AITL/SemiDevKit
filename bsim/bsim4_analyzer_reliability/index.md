@@ -259,23 +259,29 @@ Easily extendable to:
 
 ## 📎 Reliability Analysis — Reference Figures
 
+---
+
 ### ■ NMOS HCI : Vg–Id Degradation (Linear Scale)
-![NMOS HCI Vg–Id](/assets/bsim4_analyzer_reliability/nmos_hci_vgid.png)
+
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/bsim4_analyzer_reliability/nmos_hci_vgid.png" width="80%">
 
 ---
 
 ### ■ NMOS HCI : ΔVtg vs Stress Time (gmmax Method)
-![HCI dVtg](/assets/bsim4_analyzer_reliability/hci_dvtg.png)
+
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/bsim4_analyzer_reliability/hci_dvtg.png" width="80%">
 
 ---
 
 ### ■ PMOS NBTI : Vg–Id Degradation (Linear Scale)
-![PMOS NBTI Vg–Id](/assets/bsim4_analyzer_reliability/pmos_nbti_vgid.png)
+
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/bsim4_analyzer_reliability/pmos_nbti_vgid.png" width="80%">
 
 ---
 
 ### ■ PMOS NBTI : ΔVtg vs Stress Time
-![NBTI dVtg](/assets/bsim4_analyzer_reliability/nbit_dvtg.png)
+
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/bsim4_analyzer_reliability/nbit_dvtg.png" width="80%">
 
 ---
 
