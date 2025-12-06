@@ -1,4 +1,15 @@
 # ⚙️ Paramus Physical Edition  
+
+---
+
+##  Links
+
+| Language | GitHub Pages 🌐 | GitHub 💻 |
+|----------|----------------|-----------|
+| 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/bsim/Paramus/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/Paramus) |
+
+---
+
 ### *Generate BSIM4 model cards from five fundamental physical parameters*
 
 Paramus Physical Edition is a Python-based utility that automatically generates  
