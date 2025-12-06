@@ -1,3 +1,10 @@
+---
+layout: default
+title: contributing
+---
+
+----
+
 # 11_contributing.md
 # Contributing to SemiDevKit
 
