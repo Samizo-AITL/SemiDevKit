@@ -1,3 +1,10 @@
+---
+layout: default
+title: tcad_playground_pzt
+---
+
+----
+
 # 📘 PZT P–E Loop Playground
 *A lightweight modeling and visualization toolkit for exploring PZT polarization behavior*  
 *(Samizo-Lab / TCAD Pre-Analysis Sandbox)*
