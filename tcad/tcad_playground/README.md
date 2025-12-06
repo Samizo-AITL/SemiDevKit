@@ -1,5 +1,15 @@
 # TCAD_PLAYGROUND
 
+---
+
+##  Links
+
+| Language | GitHub Pages 🌐 | GitHub 💻 |
+|----------|----------------|-----------|
+| 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad/tcad_playground) |
+
+---
+
 A lightweight Python-based TCAD playground for MOSFET, MOSCAP, and 1D Poisson simulations.  
 Designed for education and visualization of semiconductor device physics in VSCode.
 
