@@ -182,4 +182,9 @@ please open an Issue in the repository.
 
 ---
 
-© 2025 Samizo-Lab / Paramus Project
+## 👤 Author
+
+| 📌 Item | Details |
+|--------|---------|
+| **Name** | Shinichi Samizo |
+| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
