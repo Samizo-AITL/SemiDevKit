@@ -231,8 +231,9 @@ Last Update: 2025-01
 
 ---
 
-# 👤 Author
+## 👤 Author
 
-**Shinichi Samizo**  
-BSIM4_ANALYZER_DIM Project  
-Samizo-Lab / Device Modeling & TCAD Research
+| 📌 Item | Details |
+|--------|---------|
+| **Name** | Shinichi Samizo |
+| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
