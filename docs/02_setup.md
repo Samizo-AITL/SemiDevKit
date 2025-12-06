@@ -1,3 +1,10 @@
+---
+layout: default
+title: setup
+---
+
+----
+
 # 2_setup.md
 
 # SemiDevKit — Setup Guide
