@@ -11,8 +11,8 @@ It provides two structured sub-flows:
 ## 📦 OpenLane Lite (Lightweight Flow)
 
 ### 🔗 Repository / Documentation
-[![Repo](https://img.shields.io/badge/GitHub-Repository-blue.svg)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane/openlane-lite)
 [![Page](https://img.shields.io/badge/Pages-Documentation-green.svg)](https://samizo-aitl.github.io/SemiDevKit/openlane/openlane-lite/)
+[![Repo](https://img.shields.io/badge/GitHub-Repository-blue.svg)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane/openlane-lite)
 
 ### 📘 Description
 - Minimal OpenLane environment  
@@ -25,8 +25,8 @@ It provides two structured sub-flows:
 ## 🧱 OpenLane Superstable (Full Stable Flow)
 
 ### 🔗 Repository / Documentation
-[![Repo](https://img.shields.io/badge/GitHub-Repository-blue.svg)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane/openlane-superstable)
 [![Page](https://img.shields.io/badge/Pages-Documentation-green.svg)](https://samizo-aitl.github.io/SemiDevKit/openlane/openlane-superstable/)
+[![Repo](https://img.shields.io/badge/GitHub-Repository-blue.svg)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane/openlane-superstable)
 
 ### 📘 Description
 - Complete run of the SPM (Simple Processor Model)  
@@ -46,13 +46,12 @@ It provides two structured sub-flows:
 
 ## 📁 Directory Structure
 
+```
 openlane/
 ├── openlane-lite/ # Lightweight OpenLane documentation
 ├── openlane-superstable/ # Full stable flow with GDS output
 └── README.md # ← This file (OpenLane index)
-
----
-
+```
 
 ---
 
