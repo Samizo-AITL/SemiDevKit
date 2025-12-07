@@ -76,7 +76,8 @@ The conceptual structure of SemiDevKit (mapped to the actual folders above) is:
     │   └── BSIM4_ANALYZER_RELIABILITY
     │
     ├── physical_design/
-    │   └── OpenLane-Lite      (openlane/openlane-lite/)
+    │   └── OpenLane-Lite             (openlane/openlane-lite/)
+    │   └── OpenLane-superstable      (openlane/openlane-superstable/)
     │
     └── docs/
         └── (Tutorials, theory notes, math formulas, examples)
@@ -103,9 +104,9 @@ Use the badges below to jump directly to each folder.
 [![Pages](https://img.shields.io/badge/GitHub%20Pages-bsim-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/bsim/)
 [![Repo](https://img.shields.io/badge/GitHub-bsim-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim)
 
-### 🔸 Physical Design (OpenLane-Lite)
-[![Pages](https://img.shields.io/badge/GitHub%20Pages-OpenLane--Lite-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/openlane/openlane-lite/)
-[![Repo](https://img.shields.io/badge/GitHub-OpenLane--Lite-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane/openlane-lite)
+### 🔸 Physical Design (OpenLane)
+[![Pages](https://img.shields.io/badge/GitHub%20Pages-OpenLane--Lite-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/openlane/)
+[![Repo](https://img.shields.io/badge/GitHub-OpenLane--Lite-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane)
 
 ### 🔸 Documentation
 [![Pages](https://img.shields.io/badge/GitHub%20Pages-docs-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/docs/)
