@@ -13,20 +13,20 @@ The flow successfully produced:
 ## ✔️ 1. Generated GDS Result (KLayout View)
 
 ### Full-chip layout
-![spm_gds_full](../assets/openlane-superstable/spm_gds_full.png)
+![spm_gds_full](/assets/openlane-superstable/spm_gds_full.png)
 
 ### Transistor-level detail (poly/diffusion layers)
-![spm_gds_dif_poly](../assets/openlane-superstable/spm_gds_dif_poly.png)
+![spm_gds_dif_poly](/assets/openlane-superstable/spm_gds_dif_poly.png)
 
 ---
 
 ## ✔️ 2. OpenROAD GUI — LEF/DEF Loaded
 
 ### Global view
-![openroad_1](../assets/openlane-superstable/openroad_1.png)
+![openroad_1](/assets/openlane-superstable/openroad_1.png)
 
 ### Detailed routing view
-![openroad_2](../assets/openlane-superstable/openroad_2.png)
+![openroad_2](/assets/openlane-superstable/openroad_2.png)
 
 ---
 
