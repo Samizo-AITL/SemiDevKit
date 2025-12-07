@@ -113,12 +113,14 @@ t > 0  (Python degradation model)
 # 🟥 NMOS HCI (Hot-Carrier Injection)
 
 ## ▶ Stress Bias Conditions
+```
 | Node   | Voltage      |
 |--------|--------------|
 | Drain  | High Vd (e.g., 1.2 V) |
 | Gate   | Stress voltage |
 | Source | 0 V |
 | Bulk   | 0 V |
+```
 
 ## ▶ Extracted Quantities
 - ΔIdlin  
@@ -136,12 +138,14 @@ python run/run_hci_nmos.py
 # 🟦 PMOS NBTI (Negative BTI)
 
 ## ▶ Stress Bias Conditions
+```
 | Node   | Voltage |
 |--------|---------|
 | Source | +1.2 V |
 | Bulk   | +1.2 V |
 | Drain  | 0 V |
 | Gate   | 0 → −1.2 V |
+```
 
 ---
 
