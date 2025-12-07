@@ -1,6 +1,16 @@
 # 🚀 OpenLane Superstable — SPM Flow Result  
 **Verified Physical Design Flow (GDS → DEF/LEF → OpenROAD Visualization)**
 
+---
+
+##  Links
+
+| Language | GitHub Pages 🌐 | GitHub 💻 |
+|----------|----------------|-----------|
+| 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/openlane/openlane-superstable/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane/openlane-superstable) |
+
+---
+
 This directory documents a fully verified execution of **OpenLane (superstable branch)** using the example design **SPM (Simple Processor Model)**.
 
 The flow produced the following valid outputs:
