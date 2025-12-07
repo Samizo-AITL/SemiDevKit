@@ -137,3 +137,11 @@ This directory shows a **complete, validated RTL-to-GDS physical design run**, i
 
 It serves as a **reference-quality example** of OpenLane superstable being executed successfully on a real SKY130A design.
 
+---
+
+## 👤 Author
+
+| 📌 Item | Details |
+|--------|---------|
+| **Name** | Shinichi Samizo |
+| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
