@@ -27,10 +27,10 @@ All results were generated **inside the official OpenLane Docker container**, wi
 ## 📐 1. Generated GDS Result (KLayout View)
 
 ### **Full-chip GDS layout**
-![spm_gds_full](/assets/openlane-superstable/spm_gds_full.png)
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/openlane-superstable/spm_gds_full.png" width="80%">
 
 ### **Transistor-level detail（poly/diffusion layers）**
-![spm_gds_dif_poly](/assets/openlane-superstable/spm_gds_dif_poly.png)
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/openlane-superstable/spm_gds_dif_poly.png" width="80%">
 
 These screenshots confirm that:
 - Standard cell placement is correct  
@@ -42,10 +42,10 @@ These screenshots confirm that:
 ## 🖥️ 2. OpenROAD GUI — Successfully Loaded LEF/DEF
 
 ### **Global layout view**
-![openroad_1](/assets/openlane-superstable/openroad_1.png)
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/openlane-superstable/openroad_1.png" width="80%">
 
 ### **Detailed routing view**
-![openroad_2](/assets/openlane-superstable/openroad_2.png)
+<img src="https://samizo-aitl.github.io/SemiDevKit/assets/openlane-superstable/openroad_2.png" width="80%">
 
 In OpenROAD GUI:
 - DEF/LEF loads without warnings  
