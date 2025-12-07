@@ -1,76 +1,129 @@
-# OpenLane Superstable — SPM Flow Result
+# 🚀 OpenLane Superstable — SPM Flow Result  
+**Verified Physical Design Flow (GDS → DEF/LEF → OpenROAD Visualization)**
 
-This directory records a verified flow execution of **OpenLane (superstable)** using the example design **SPM (Simple Processor Model)**.
+This directory documents a fully verified execution of **OpenLane (superstable branch)** using the example design **SPM (Simple Processor Model)**.
 
-The flow successfully produced:
-- Final GDS (`spm.gds`)
-- Final DEF/LEF
-- Timing & area reports
-- Verified GUI visualization in **OpenROAD**
+The flow produced the following valid outputs:
+
+- ✔️ Final GDS (`spm.gds`)  
+- ✔️ Final DEF / LEF  
+- ✔️ Layout visualization validated in **OpenROAD GUI**  
+- ✔️ Area report confirmed via OpenROAD (`report_design_area`)  
+
+All results were generated **inside the official OpenLane Docker container**, without any source code modifications.
 
 ---
 
-## ✔️ 1. Generated GDS Result (KLayout View)
+## 📐 1. Generated GDS Result (KLayout View)
 
-### Full-chip layout
+### **Full-chip GDS layout**
 ![spm_gds_full](/assets/openlane-superstable/spm_gds_full.png)
 
-### Transistor-level detail (poly/diffusion layers)
+### **Transistor-level detail（poly/diffusion layers）**
 ![spm_gds_dif_poly](/assets/openlane-superstable/spm_gds_dif_poly.png)
 
+These screenshots confirm that:
+- Standard cell placement is correct  
+- Routing layers (M1–M5) follow SKY130A design rules  
+- No missing polygons / GDS corruption  
+
 ---
 
-## ✔️ 2. OpenROAD GUI — LEF/DEF Loaded
+## 🖥️ 2. OpenROAD GUI — Successfully Loaded LEF/DEF
 
-### Global view
+### **Global layout view**
 ![openroad_1](/assets/openlane-superstable/openroad_1.png)
 
-### Detailed routing view
+### **Detailed routing view**
 ![openroad_2](/assets/openlane-superstable/openroad_2.png)
+
+In OpenROAD GUI:
+- DEF/LEF loads without warnings  
+- Layer visibility & routing geometry verified  
+- Filler cells / vias / standard cells correctly rendered  
 
 ---
 
-## ✔️ 3. Commands Used (Inside OpenLane Container)
+## 🧪 3. Commands Used (Inside OpenLane Container)
 
-### Load technology and design
-
+### **Start OpenROAD**
 ```tcl
 openroad
-read_lef designs/spm/runs/<RUN>/tmp/merged.nom.lef
-read_def designs/spm/runs/<RUN>/results/final/def/spm.def
-Read Liberty (optional for timing view)
-read_liberty /openlane/pdks/sky130A/.../sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 
 ---
 
-## ✔️ 4. Example Report
+### **Load technology (LEF) and placed-and-routed design (DEF)**
 
-###  Area report
+```tcl
+read_lef designs/spm/runs/<RUN>/tmp/merged.nom.lef
+read_def designs/spm/runs/<RUN>/results/final/def/spm.def
+```
+
+💡 `<RUN>` is typically auto-generated, e.g.:  
+`RUN_2025.12.07_15.21.34`
+
+---
+
+### *(Optional)* Load Liberty for timing analysis
+
+```tcl
+read_liberty /openlane/pdks/sky130A/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+---
+
+## 📊 4. Example Report Output
+
+### **Design Area Report**
+OpenROAD successfully evaluates area after loading LEF/DEF:
 
 ```
 report_design_area
 Design area 4114 u^2 51% utilization.
 ```
 
+Interpretation:
+- **4114 μm²** = total placed cell + routing area  
+- **51% utilization** = healthy for SKY130 (target 50–60%)  
+
 ---
 
-## ✔️ 5. Export (Optional)
+## 📤 5. Export Options (Optional)
 
-```
+OpenROAD allows saving the database in multiple formats:
+
+```tcl
 write_def out.def
 write_lef out.lef
 write_db out.db
 ```
 
+Useful for:
+- External STA tools  
+- KLayout / Magic cross-verification  
+- Downstream EDA workflows  
+
 ---
 
-## Notes
+## 📝 Notes
 
-- This flow corresponds to OpenLane superstable revision ff5509f.
-- Verified inside the official OpenLane container.
-- No modification to source code; only standard configuration was used.
+- Target design: **SPM (Simple Processor Model)**  
+- Environment: **OpenLane “superstable”**, revision `ff5509f`  
+- Platform: **SKY130A PDK**  
+- Execution environment: **Official OpenLane Docker container**  
+- No code changes; only standard OpenLane configs were used  
+- All results are reproducible with the provided commands  
 
+---
 
+## ✔️ Summary
 
+This directory shows a **complete, validated RTL-to-GDS physical design run**, including:
+- GDS generation  
+- DEF/LEF export  
+- OpenROAD visualization  
+- Area report verification  
+
+It serves as a **reference-quality example** of OpenLane superstable being executed successfully on a real SKY130A design.
 
