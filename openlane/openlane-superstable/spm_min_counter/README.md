@@ -1,8 +1,10 @@
-# spm_min_counter — Minimal RTL Flow
+# spm_min_counter — Minimal RTL → GDS Reference Flow
 
-A **pre-declared minimal RTL → GDS flow** using  
-**OpenLane (superstable)** and **SKY130A**,  
-designed to verify flow stability with a self-authored RTL.
+A **pre-declared, self-authored minimal RTL flow**  
+validated through **OpenLane (superstable)** on **SKY130A**.
+
+This project demonstrates a *clean, modification-free*  
+**RTL → GDS completion**, serving as a **baseline physical design reference**.
 
 ---
 
@@ -16,79 +18,119 @@ designed to verify flow stability with a self-authored RTL.
 
 ## 🎯 Purpose
 
-- Verify **OpenLane superstable** flow using a *self-authored* RTL
-- Confirm **RTL → GDS completion** without any flow modification
-- Establish a **baseline reference** for subsequent design variations
+This design exists to **prove flow stability**, not functionality richness.
 
-This design is intentionally minimal and declared **before execution**  
-to eliminate post-hoc interpretation.
+- Validate **OpenLane superstable** using a *designer-authored* RTL
+- Confirm **complete RTL → GDS generation** with **no flow customization**
+- Establish a **pre-declared baseline** for future comparative experiments
+
+All design intent, constraints, and structure were defined **before execution**,  
+explicitly avoiding post-hoc tuning or interpretation.
 
 ---
 
 ## 🧩 Design Overview
 
 | Item | Description |
-|----|------------|
-| Function | Free-running counter |
+|------|------------|
+| Function | Free-running binary counter |
 | FSM | None |
 | Clock domains | Single |
 | Reset | Synchronous, active-low |
 | Macros / SRAM | Not used |
 
-RTL source:  
-➡ [`rtl/spm_min_counter.v`](./rtl/spm_min_counter.v)
+RTL implementation:  
+➡ `rtl/spm_min_counter.v`
+
+The logic is intentionally minimal to isolate **physical design behavior**  
+from architectural complexity.
 
 ---
 
-## ⏱ Constraints (Pre-declared)
+## ⏱ Pre-declared Constraints
 
 | Parameter | Value |
-|---------|------|
+|----------|-------|
 | Clock period | 10 ns (100 MHz) |
 | Core utilization | 30 % |
 | Aspect ratio | 1.0 |
 
-OpenLane configuration:  
-➡ [`openlane/config.tcl`](./openlane/config.tcl)
+OpenLane configuration file:  
+➡ `openlane/config.tcl`
+
+These constraints were fixed **prior to running the flow**  
+and were not adjusted based on results.
 
 ---
 
-## 📦 Flow Execution Result
+## 📦 Flow Results
 
-- **GDS generation**: ✅ Successful
-- **CTS behavior**: Stable
-- **Routing**: No congestion blocking observed
+- **RTL → GDS**: ✅ Completed successfully
+- **CTS**: Stable clock tree construction
+- **Routing**: No congestion-induced blockage observed
+- **DRC/LVS**: Pass (OpenLane default checks)
 
-Summary report:  
-➡ [`run_log/flow_summary.md`](./run_log/flow_summary.md)
+Flow summary:  
+➡ `run_log/flow_summary.md`
 
-Final artifact:  
-➡ [`results/spm_min_counter.gds`](./results/spm_min_counter.gds)
-
----
-
-## 🧠 Notes
-
-- This design serves as a **minimal load generator** for physical design observation
-- Intended as a **baseline** before introducing:
-  - higher clock frequency
-  - wider datapath
-  - FSM / control logic
-
-Subsequent variants will be added as parallel experiments.
+Final layout database:  
+➡ `results/spm_min_counter.gds`
 
 ---
 
-## 📍 Position in SemiDevKit
+## 🖼 Layout Visualization (KLayout)
 
-This flow is located under:
+The following PNGs are provided for **layer-wise inspection without requiring KLayout**:
+
+| File | Description |
+|------|------------|
+| `1_overview.png` | Floorplan & row overview |
+| `2_full.png` | All layers (debug view) |
+| `3_metal.png` | Metal routing focus |
+| `4_cts_clock.png` | Clock tree distribution |
+| `5_pnd.png` | Power / ground network |
+| `6_cell_density.png` | Cell & diffusion density |
+| `7_min_rtl.png` | RTL signal correspondence |
+
+Location:  
+➡ `results/`
+
+---
+
+## 🧠 Design Intent Notes
+
+- Acts as a **minimal physical load generator**
+- Suitable for observing:
+  - placement regularity
+  - CTS topology
+  - routing layer usage
+- Designed as a **baseline reference**, prior to introducing:
+  - higher clock frequencies
+  - wider datapaths
+  - FSM or control-heavy logic
+
+All subsequent variants will be derived **relative to this design**.
+
+---
+
+## 📍 Position within SemiDevKit
 
 ```
 openlane/
 └─ openlane-superstable/
-├─ spm_reference/ (Golden reference)
-└─ spm_min_counter/ (Self-authored minimal design)
+├─ spm_reference/ # OpenLane reference (Golden)
+└─ spm_min_counter/ # Self-authored minimal RTL
 ```
 
-It complements the reference flow by validating **designer-authored RTL** behavior.
 
+This project complements the reference flow by validating  
+**designer-authored RTL behavior under identical tool conditions**.
+
+---
+
+## ✅ Takeaway
+
+> **If this design fails, the flow is unstable.**  
+> **If this design passes, the flow is usable.**
+
+`spm_min_counter` defines the **zero-point** for all future OpenLane-based exploration.
