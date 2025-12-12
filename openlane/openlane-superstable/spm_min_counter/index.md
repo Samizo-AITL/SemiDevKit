@@ -1,3 +1,8 @@
+---
+layout: default
+title: spm_min_counter
+---
+
 # spm_min_counter — Minimal RTL Flow
 
 ## Purpose
