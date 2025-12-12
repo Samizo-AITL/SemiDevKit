@@ -11,12 +11,11 @@ designed to verify flow stability with a self-authored RTL.
 
 ---
 
-## 🔗 Links
+##  Links
 
-| Resource | Link |
-|--------|------|
-| 🌐 GitHub Pages | [Open spm_min_counter page](https://samizo-aitl.github.io/SemiDevKit/openlane/openlane-superstable/spm_min_counter) |
-| 💻 GitHub Repository | [View source on GitHub](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane/openlane-superstable/spm_min_counter) |
+| Language | GitHub Pages 🌐 | GitHub 💻 |
+|----------|----------------|-----------|
+| 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/openlane/openlane-superstable/spm_min_counter) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane/openlane-superstable/spm_min_counter) |
 
 ---
 
