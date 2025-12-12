@@ -88,10 +88,11 @@ Subsequent variants will be added as parallel experiments.
 
 This flow is located under:
 
+```
 openlane/
 └─ openlane-superstable/
 ├─ spm_reference/ (Golden reference)
 └─ spm_min_counter/ (Self-authored minimal design)
-
+```
 
 It complements the reference flow by validating **designer-authored RTL** behavior.
