@@ -146,6 +146,16 @@ It serves as a **reference-quality example** of OpenLane superstable being execu
 
 ---
 
+## 🧪 Self-made Minimal RTL Flow
+
+- **Design** : spm_min_counter
+- **Purpose**: Verify OpenLane stability with self-authored RTL
+- **Result** : GDS successfully generated
+
+➡ [spm_min_counter Flow Details](./spm_min_counter/)
+
+---
+
 ## 👤 Author
 
 | 📌 Item | Details |
