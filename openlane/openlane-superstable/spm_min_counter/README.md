@@ -42,9 +42,6 @@ explicitly avoiding post-hoc tuning or interpretation.
 RTL implementation:
 `rtl/spm_min_counter.v`
 
-The logic is intentionally minimal to isolate **physical design behavior**
-from architectural complexity.
-
 ---
 
 ## ⏱ Pre-declared Constraints
@@ -54,12 +51,6 @@ from architectural complexity.
 | Clock period | 10 ns (100 MHz) |
 | Core utilization | 30 % |
 | Aspect ratio | 1.0 |
-
-OpenLane configuration file:
-`openlane/config.tcl`
-
-These constraints were fixed **prior to running the flow**
-and were not adjusted based on results.
 
 ---
 
@@ -77,14 +68,40 @@ Final layout database:
 
 ## 🖼 Layout Visualization (KLayout)
 
+All layout images are provided as PNG for **browser-based inspection**.
+
+### Embedded Overview
+
 <img src="https://raw.githubusercontent.com/Samizo-AITL/SemiDevKit/main/openlane/openlane-superstable/spm_min_counter/results/1_overview.png" width="80%"/>
+
+### Direct Links to All KLayout PNGs
+
+- Floorplan overview  
+  https://raw.githubusercontent.com/Samizo-AITL/SemiDevKit/main/openlane/openlane-superstable/spm_min_counter/results/1_overview.png
+
+- Full layer view  
+  https://raw.githubusercontent.com/Samizo-AITL/SemiDevKit/main/openlane/openlane-superstable/spm_min_counter/results/2_full.png
+
+- Metal routing focus  
+  https://raw.githubusercontent.com/Samizo-AITL/SemiDevKit/main/openlane/openlane-superstable/spm_min_counter/results/3_metal.png
+
+- Clock tree (CTS)  
+  https://raw.githubusercontent.com/Samizo-AITL/SemiDevKit/main/openlane/openlane-superstable/spm_min_counter/results/4_cts_clock.png
+
+- Power / ground network  
+  https://raw.githubusercontent.com/Samizo-AITL/SemiDevKit/main/openlane/openlane-superstable/spm_min_counter/results/5_pnd.png
+
+- Cell & diffusion density  
+  https://raw.githubusercontent.com/Samizo-AITL/SemiDevKit/main/openlane/openlane-superstable/spm_min_counter/results/6_cell_density.png
+
+- RTL signal correspondence  
+  https://raw.githubusercontent.com/Samizo-AITL/SemiDevKit/main/openlane/openlane-superstable/spm_min_counter/results/7_min_rtl.png
 
 ---
 
 ## 🧪 RTL Simulation (Testbench & GTKWave)
 
-This project includes a **standalone RTL simulation environment**
-to validate logical behavior *before* physical design.
+Standalone RTL simulation is provided **without modifying the OpenLane RTL**.
 
 ```
 spm_min_counter/
@@ -95,7 +112,7 @@ spm_min_counter/
 │  └─ wave/
 ```
 
-Simulation is executed via:
+Simulation run:
 
 ```
 cd sim
@@ -106,7 +123,12 @@ cd sim
 
 ## 📈 GTKWave – RTL Counter Behavior
 
+Waveform snapshot:
+
 <img src="https://raw.githubusercontent.com/Samizo-AITL/SemiDevKit/main/openlane/openlane-superstable/spm_min_counter/results/gtkwave.png" width="80%"/>
+
+Direct link:
+https://raw.githubusercontent.com/Samizo-AITL/SemiDevKit/main/openlane/openlane-superstable/spm_min_counter/results/gtkwave.png
 
 ---
 
@@ -123,5 +145,5 @@ openlane/
 
 ## 👤 Author
 
-Name: Shinichi Samizo
+Name: Shinichi Samizo  
 GitHub: https://github.com/Samizo-AITL
