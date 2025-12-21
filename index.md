@@ -8,8 +8,6 @@ title: SemiDevKit
 # SemiDevKit
 ### *Open Educational Toolkit for Semiconductor Device Modeling, SPICE Simulation, Reliability Analysis, and VLSI Physical Design*
 
-[![Back to Samizo-AITL Portal](https://img.shields.io/badge/Back%20to%20Samizo--AITL%20Portal-brightgreen)](https://samizo-aitl.github.io) 
-
 SemiDevKit is a unified, open-source learning suite that covers the entire semiconductor device workflow:  
 from **device physics** and **compact modeling (BSIM4)** to **SPICE analysis**, **reliability evaluation (NBTI/HCI)**, and **OpenLane-based physical design**.
 
@@ -22,6 +20,8 @@ It is designed for students, researchers, and engineers who want a practical and
 | Language | GitHub Pages 🌐 | GitHub 💻 |
 |----------|----------------|-----------|
 | 🇺🇸 English | [![GitHub Pages EN](https://img.shields.io/badge/GitHub%20Pages-English-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/) | [![GitHub Repo EN](https://img.shields.io/badge/GitHub-English-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main) |
+
+[![Back to Samizo-AITL Portal](https://img.shields.io/badge/Back%20to%20Samizo--AITL%20Portal-brightgreen)](https://samizo-aitl.github.io) 
 
 ---
 
