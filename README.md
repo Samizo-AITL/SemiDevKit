@@ -6,20 +6,6 @@ from **device physics** and **compact modeling (BSIM4)** to **SPICE analysis**, 
 
 It is designed for students, researchers, and engineers who want a practical and lightweight environment to explore the foundations of semiconductor devices and integrated circuit design.
 
-[![Back to Samizo-AITL Portal](https://img.shields.io/badge/Back%20to%20Samizo--AITL%20Portal-brightgreen)](https://samizo-aitl.github.io/en)
-
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#-ライセンス--license)
-
-> 🆕 **Check the latest updates in the [ChangeLog](https://samizo-aitl.github.io/SemiDevKit/ChangeLog).**  
-> *Review all recent modifications in the [ChangeLog](https://samizo-aitl.github.io/SemiDevKit/ChangeLog).*
-
-<p align="right">
-  <img src="https://img.shields.io/badge/Last%20Update-2025--12--07-orange" alt="Last Update">
-  <a href="https://samizo-aitl.github.io/SemiDevKit/ChangeLog">
-    <img src="https://img.shields.io/badge/View-ChangeLog-blue?logo=markdown" alt="View ChangeLog">
-  </a>
-</p>
-
 ---
 
 ## 🔗 Official Links
