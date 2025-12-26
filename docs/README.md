@@ -18,54 +18,41 @@ This directory provides structured, versioned documentation for all modules incl
 
 ## 📁 Document Index
 
-### **01. Installation**
-Step-by-step instructions for installing Python, ngspice, required packages, and optional tools (WSL2, Docker, VS Code).  
-[![Open](https://img.shields.io/badge/01_install.md-Open-blue?logo=markdown)](https://samizo-aitl.github.io/SemiDevKit/docs/01_install)
+### 01. [Installation](https://samizo-aitl.github.io/SemiDevKit/docs/01_install)
+Step-by-step instructions for installing Python, ngspice, required packages, and optional tools (WSL2, Docker, VS Code).
 
-### **02. Initial Setup**
-Project setup, recommended directory layout, virtual environment creation, and platform-specific guidance (Linux, WSL2, macOS, Windows).  
-[![Open](https://img.shields.io/badge/02_setup.md-Open-blue?logo=markdown)](https://samizo-aitl.github.io/SemiDevKit/docs/02_setup)
+### 02. [Initial Setup](https://samizo-aitl.github.io/SemiDevKit/docs/02_setup)
+Project setup, recommended directory layout, virtual environment creation, and platform-specific guidance (Linux, WSL2, macOS, Windows).
 
-### **03. Usage Guide**
-How to run each SemiDevKit module:  
-BSIM4 analyzers, TCAD playgrounds, Paramus Physical Edition, OpenLane-Lite.  
-[![Open](https://img.shields.io/badge/03_usage.md-Open-blue?logo=markdown)](https://samizo-aitl.github.io/SemiDevKit/docs/03_usage)
+### 03. [Usage Guide](https://samizo-aitl.github.io/SemiDevKit/docs/03_usage)
+How to run each SemiDevKit module: BSIM4 analyzers, TCAD playgrounds, Paramus Physical Edition, OpenLane-Lite.
 
-### **04. License**
-Hybrid license model covering code, documents, diagrams.  
-[![Open](https://img.shields.io/badge/04_license.md-Open-blue?logo=markdown)](https://samizo-aitl.github.io/SemiDevKit/docs/04_license)
+### 04. [License](https://samizo-aitl.github.io/SemiDevKit/docs/04_license)
+Hybrid license model covering code, documents, diagrams.
 
-### **05. OpenLane-Lite Usage**
-Full documentation for the lightweight RTL-to-GDSII flow.  
-[![Open](https://img.shields.io/badge/05_openlane_lite_usage.md-Open-blue?logo=markdown)](https://samizo-aitl.github.io/SemiDevKit/docs/05_openlane_lite_usage)
+### 05. [OpenLane-Lite Usage](https://samizo-aitl.github.io/SemiDevKit/docs/05_openlane_lite_usage)
+Full documentation for the lightweight RTL-to-GDSII flow.
 
-### **06. Troubleshooting**
-Common issues and solutions across all SemiDevKit modules.  
-[![Open](https://img.shields.io/badge/06_troubleshooting.md-Open-blue?logo=markdown)](https://samizo-aitl.github.io/SemiDevKit/docs/06_troubleshooting)
+### 06. [Troubleshooting](https://samizo-aitl.github.io/SemiDevKit/docs/06_troubleshooting)
+Common issues and solutions across all SemiDevKit modules.
 
-### **07. FAQ**
-Frequently asked questions.  
-[![Open](https://img.shields.io/badge/07_faq.md-Open-blue?logo=markdown)](https://samizo-aitl.github.io/SemiDevKit/docs/07_faq)
+### 07. [FAQ](https://samizo-aitl.github.io/SemiDevKit/docs/07_faq)
+Frequently asked questions.
 
-### **08. Directory Structure**
-Explanation of repository layout.  
-[![Open](https://img.shields.io/badge/08_directory_structure.md-Open-blue?logo=markdown)](https://samizo-aitl.github.io/SemiDevKit/docs/08_directory_structure)
+### 08. [Directory Structure](https://samizo-aitl.github.io/SemiDevKit/docs/08_directory_structure)
+Explanation of repository layout.
 
-### **09. Glossary**
-Definitions of modeling, TCAD, SPICE, VLSI terms.  
-[![Open](https://img.shields.io/badge/09_glossary.md-Open-blue?logo=markdown)](https://samizo-aitl.github.io/SemiDevKit/docs/09_glossary)
+### 09. [Glossary](https://samizo-aitl.github.io/SemiDevKit/docs/09_glossary)
+Definitions of modeling, TCAD, SPICE, VLSI terms.
 
-### **10. Changelog**
-All update history.  
-[![Open](https://img.shields.io/badge/10_changelog.md-Open-blue?logo=markdown)](https://samizo-aitl.github.io/SemiDevKit/docs/10_changelog)
+### 10. [Changelog](https://samizo-aitl.github.io/SemiDevKit/docs/10_changelog)
+All update history.
 
-### **11. Contributing Guide**
-Rules for submitting PRs, branch flow, coding policies.  
-[![Open](https://img.shields.io/badge/11_contributing.md-Open-blue?logo=markdown)](https://samizo-aitl.github.io/SemiDevKit/docs/11_contributing)
+### 11. [Contributing Guide](https://samizo-aitl.github.io/SemiDevKit/docs/11_contributing)
+Rules for submitting PRs, branch flow, coding policies.
 
-### **12. Security Policy**
-How to report vulnerabilities safely.  
-[![Open](https://img.shields.io/badge/12_security.md-Open-blue?logo=markdown)](https://samizo-aitl.github.io/SemiDevKit/docs/12_security)
+### 12. [Security Policy](https://samizo-aitl.github.io/SemiDevKit/docs/12_security)
+How to report vulnerabilities safely.
 
 ---
 
