@@ -32,12 +32,10 @@ tcad/
 ```
 
 ### 🔸 tcad_playground — MOSFET & Semiconductor Physics  
-[![Pages](https://img.shields.io/badge/GitHub%20Pages-tcad__playground-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground/)
-[![Repo](https://img.shields.io/badge/GitHub-tcad__playground-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad/tcad_playground)
+[Pages](https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground/) ｜ [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad/tcad_playground)
 
 ### 🔸 tcad_playground_pzt — Ferroelectric (PZT / HfO₂) Simulation  
-[![Pages](https://img.shields.io/badge/GitHub%20Pages-tcad__playground__pzt-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground_pzt/)
-[![Repo](https://img.shields.io/badge/GitHub-tcad__playground__pzt-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad/tcad_playground_pzt)
+[Pages](https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground_pzt/) ｜ [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad/tcad_playground_pzt)
 
 ---
 
