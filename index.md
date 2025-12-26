@@ -88,13 +88,24 @@ For the most up-to-date implementation, please refer to the actual folders:
 
 ## 📁 Quick Navigation (Repository Modules)
 
-🔸 Device Physics / TCAD — [Pages](https://samizo-aitl.github.io/SemiDevKit/tcad/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad)
-🔸 Compact Modeling & SPICE (BSIM4 Suite) — [Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim)
-🔸 Physical Design (OpenLane-Lite) — [Pages](https://samizo-aitl.github.io/SemiDevKit/openlane/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane)
-🔸 Documentation — [Pages](https://samizo-aitl.github.io/SemiDevKit/docs/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/docs)
+- 🔸 Device Physics / TCAD  
+  [Pages](https://samizo-aitl.github.io/SemiDevKit/tcad/) ｜ [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad)
 
-🔸 Site Assets — [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/assets)
-🔸 Jekyll Layouts — [Repo: _includes](https://github.com/Samizo-AITL/SemiDevKit/tree/main/_includes) | [Repo: _layouts](https://github.com/Samizo-AITL/SemiDevKit/tree/main/_layouts)
+- 🔸 Compact Modeling & SPICE (BSIM4 Suite)  
+  [Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/) ｜ [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim)
+
+- 🔸 Physical Design (OpenLane-Lite)  
+  [Pages](https://samizo-aitl.github.io/SemiDevKit/openlane/) ｜ [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane)
+
+- 🔸 Documentation  
+  [Pages](https://samizo-aitl.github.io/SemiDevKit/docs/) ｜ [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/docs)
+
+- 🔸 Site Assets  
+  [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/assets)
+
+- 🔸 Jekyll Layouts  
+  [Repo: _includes](https://github.com/Samizo-AITL/SemiDevKit/tree/main/_includes) ｜  
+  [Repo: _layouts](https://github.com/Samizo-AITL/SemiDevKit/tree/main/_layouts)
 
 ---
 
