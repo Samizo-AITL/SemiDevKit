@@ -88,31 +88,13 @@ For the most up-to-date implementation, please refer to the actual folders:
 
 ## 📁 Quick Navigation (Repository Modules)
 
-SemiDevKit is organized into several major learning modules.  
-Use the badges below to jump directly to each folder.
+- 🔸 Device Physics / TCAD — [Pages](https://samizo-aitl.github.io/SemiDevKit/tcad/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad)
+- 🔸 Compact Modeling & SPICE (BSIM4 Suite) — [Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim)
+- 🔸 Physical Design (OpenLane-Lite) — [Pages](https://samizo-aitl.github.io/SemiDevKit/openlane/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane)
+- 🔸 Documentation — [Pages](https://samizo-aitl.github.io/SemiDevKit/docs/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/docs)
 
-### 🔸 Device Physics / TCAD
-[![Pages](https://img.shields.io/badge/GitHub%20Pages-tcad-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/tcad/)
-[![Repo](https://img.shields.io/badge/GitHub-tcad-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad)
-
-### 🔸 Compact Modeling & SPICE (BSIM4 Suite)
-[![Pages](https://img.shields.io/badge/GitHub%20Pages-bsim-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/bsim/)
-[![Repo](https://img.shields.io/badge/GitHub-bsim-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim)
-
-### 🔸 Physical Design (OpenLane)
-[![Pages](https://img.shields.io/badge/GitHub%20Pages-OpenLane--Lite-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/openlane/)
-[![Repo](https://img.shields.io/badge/GitHub-OpenLane--Lite-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane)
-
-### 🔸 Documentation
-[![Pages](https://img.shields.io/badge/GitHub%20Pages-docs-brightgreen?logo=github)](https://samizo-aitl.github.io/SemiDevKit/docs/)
-[![Repo](https://img.shields.io/badge/GitHub-docs-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/docs)
-
-### 🔸 Site Assets
-[![Repo](https://img.shields.io/badge/GitHub-assets-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/assets)
-
-### 🔸 Jekyll Layouts
-[![Repo](https://img.shields.io/badge/GitHub-_includes-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/_includes)
-[![Repo](https://img.shields.io/badge/GitHub-_layouts-blue?logo=github)](https://github.com/Samizo-AITL/SemiDevKit/tree/main/_layouts)
+- 🔸 Site Assets — [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/assets)
+- 🔸 Jekyll Layouts — [Repo: _includes](https://github.com/Samizo-AITL/SemiDevKit/tree/main/_includes) | [Repo: _layouts](https://github.com/Samizo-AITL/SemiDevKit/tree/main/_layouts)
 
 ---
 
