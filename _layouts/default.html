@@ -32,19 +32,18 @@
   <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
   <!-- Additional head customizations (e.g., Mermaid) -->
-  {%- include head.html -%}
-</head>
-<body class="semidevkit-root">
-  <header class="page-header">
-    <div class="wrapper">
-      <h1 class="site-title">
-        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      </h1>
-      {% if site.description %}
-      <p class="site-description">{{ site.description }}</p>
-      {% endif %}
-    </div>
-  </header>
+  {% unless page.url == "/" %}
+<header class="page-header">
+  <div class="wrapper">
+    <h1 class="site-title">
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    </h1>
+    {% if site.description %}
+    <p class="site-description">{{ site.description }}</p>
+    {% endif %}
+  </div>
+</header>
+{% endunless %}
 
   <main class="main-container wrapper">
     {{ content }}
