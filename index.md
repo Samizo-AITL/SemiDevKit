@@ -3,8 +3,6 @@ layout: default
 title: SemiDevKit
 ---
 
-----
-
 # SemiDevKit
 ### *Open Educational Toolkit for Semiconductor Device Modeling, SPICE Simulation, Reliability Analysis, and VLSI Physical Design*
 
