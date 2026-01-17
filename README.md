@@ -95,13 +95,6 @@ For the most up-to-date implementation, please refer to the actual folders:
 [**GitHub Pages**](https://samizo-aitl.github.io/SemiDevKit/docs/)  
 [**GitHub Repository**](https://github.com/Samizo-AITL/SemiDevKit/tree/main/docs)
 
-### 🔸 Site Assets
-[GitHub Repository](https://github.com/Samizo-AITL/SemiDevKit/tree/main/assets)
-
-### 🔸 Jekyll Layouts
-[_includes](https://github.com/Samizo-AITL/SemiDevKit/tree/main/_includes)  
-[_layouts](https://github.com/Samizo-AITL/SemiDevKit/tree/main/_layouts)
-
 ---
 
 ## 🚀 Getting Started
