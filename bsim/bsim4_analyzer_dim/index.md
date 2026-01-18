@@ -3,8 +3,6 @@ layout: default
 title: bsim4_analyzer_dim
 ---
 
-----
-
 # BSIM4_ANALYZER_DIM  
 
 ---
