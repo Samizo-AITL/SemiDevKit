@@ -66,8 +66,6 @@ openlane/
 └── README.md # ← This file (OpenLane index)
 ```
 
----
-
 ## 💬 Notes
 
 - Both flows use **SKY130** and were executed in official OpenLane containers  
@@ -78,10 +76,20 @@ openlane/
 
 ## 👤 Author
 
-| 📌 Item | Details |
-|--------|---------|
-| **Name** | Shinichi Samizo |
-| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
+| Item | Details |
+|----|--------|
+| 👨‍🔬 Name | **Shinichi Samizo** |
+| 💻 GitHub | [Samizo-AITL](https://github.com/Samizo-AITL) |
 
+---
 
+## 📄 License
 
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#---license)
+
+| Component | License | Notes |
+|---------|---------|------|
+| 💻 Source Code | [**MIT License**](https://opensource.org/licenses/MIT) | Free use / modification |
+| 📄 Text Materials | [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/) / [**CC BY-SA 4.0**](https://creativecommons.org/licenses/by-sa/4.0/) | Attribution required |
+| 🎨 Figures & Diagrams | [**CC BY-NC 4.0**](https://creativecommons.org/licenses/by-nc/4.0/) | Non-commercial only |
+| 🔗 External References | Original license | Proper citation required |
