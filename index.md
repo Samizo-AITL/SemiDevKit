@@ -185,9 +185,9 @@ Including:
 
 | Component | License | Notes |
 |---------|---------|------|
-| 💻 Source Code | MIT License | Free use / modification |
-| 📄 Text Materials | CC BY 4.0 / CC BY-SA 4.0 | Attribution required |
-| 🎨 Figures & Diagrams | CC BY-NC 4.0 | Non-commercial only |
+| 💻 Source Code | [MIT License](https://opensource.org/licenses/MIT) | Free use / modification |
+| 📄 Text Materials | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | Attribution required |
+| 🎨 Figures & Diagrams | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | Non-commercial only |
 | 🔗 External References | Original license | Proper citation required |
 
 ---
