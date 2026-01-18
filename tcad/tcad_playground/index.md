@@ -3,8 +3,6 @@ layout: default
 title: tcad_playground
 ---
 
-----
-
 # TCAD_PLAYGROUND
 
 ---
