@@ -70,7 +70,7 @@ for all modules included in SemiDevKit.
 
 ## 📄 License
 
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#---license)
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/docs/#---license)
 
 | Component | License | Notes |
 |---------|---------|------|
