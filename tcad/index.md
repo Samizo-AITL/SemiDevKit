@@ -38,11 +38,12 @@ tcad/
 └── tcad_playground_pzt/    # Ferroelectric (PZT/HfO₂) polarization & FE-FET analysis
 ```
 
-### 🔸 tcad_playground — MOSFET & Semiconductor Physics  
-[Pages](https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground/) ｜ [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad/tcad_playground)
+### 🔬 TCAD / Device Physics Modules
 
-### 🔸 tcad_playground_pzt — Ferroelectric (PZT / HfO₂) Simulation  
-[Pages](https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground_pzt/) ｜ [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad/tcad_playground_pzt)
+| No. | Module | Focus | Description | Pages | Repo |
+|----:|--------|-------|-------------|-------|------|
+| 1 | **tcad_playground** | MOSFET / Semiconductor Physics | 1D device physics playground<br>Poisson & Drift–Diffusion solvers<br>MOS capacitor & MOSFET electrostatics | [Pages](https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad/tcad_playground) |
+| 2 | **tcad_playground_pzt** | Ferroelectric Devices | Ferroelectric material modeling<br>PZT / HfO₂ polarization (P–E)<br>Landau–Khalatnikov-based simulation | [Pages](https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground_pzt/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad/tcad_playground_pzt) |
 
 ---
 
