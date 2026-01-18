@@ -306,7 +306,7 @@ It serves as a **reference-quality example** of OpenLane superstable being execu
 
 ## 📄 License
 
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#---license)
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/openlane/openlane-superstable/#---license)
 
 | Component | License | Notes |
 |---------|---------|------|
