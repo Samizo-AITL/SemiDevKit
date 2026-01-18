@@ -3,125 +3,193 @@ layout: default
 title: faq
 ---
 
-----
+---
 
-# 7_faq.md
-# SemiDevKit — Frequently Asked Questions (FAQ)
+# ❓ Frequently Asked Questions (FAQ) — SemiDevKit
 
-This FAQ summarizes common questions when using **SemiDevKit**, including TCAD Playgrounds,  
-BSIM4 Analyzers, Paramus Physical Edition, OpenLane-Lite, and general semiconductor simulation workflows.
+This FAQ summarizes **commonly asked questions** when using **SemiDevKit**, including:
+
+- 🧪 TCAD Playgrounds  
+- 📐 BSIM4 Analyzers  
+- 🧮 Paramus Physical Edition  
+- 🏗 OpenLane-Lite  
+- General semiconductor device simulation workflows  
 
 ---
 
-# 1. General Questions
+## 🌐 1. General Questions
 
 ### Q1. What is SemiDevKit?
-SemiDevKit is a modular educational toolkit covering:
-- Semiconductor device physics (Poisson, MOSFET models)
-- BSIM4 compact modeling and SPICE analysis
-- Reliability modeling (HCI, NBTI)
-- Physical design (OpenLane-Lite)
-- PZT ferroelectric behavior
-- Parameter extraction (Paramus)
 
-### Q2. Which OS is recommended?
-Linux or WSL2 is strongly recommended.
+**SemiDevKit** is a **modular educational toolkit** covering the full spectrum of semiconductor device and design workflows, including:
 
-### Q3. Does SemiDevKit require GPU?
-No. All simulations are CPU-based.
+- Semiconductor device physics (Poisson equation, MOSFET models)  
+- BSIM4 compact modeling and SPICE-based analysis  
+- Reliability modeling (HCI, NBTI)  
+- Digital physical design (OpenLane-Lite)  
+- Ferroelectric (PZT) behavior  
+- Physical parameter extraction (Paramus)
 
 ---
 
-# 2. Python & Environment
+### Q2. Which operating system is recommended?
 
-### Q4. Which Python version is required?
-Python 3.9–3.12 recommended.
+**Linux or Windows with WSL2** is strongly recommended.  
+Native Windows execution is possible but not preferred.
+
+---
+
+### Q3. Does SemiDevKit require a GPU?
+
+No.  
+All simulations are **CPU-based** and do not require GPU acceleration.
+
+---
+
+## 🐍 2. Python & Environment
+
+### Q4. Which Python version should I use?
+
+**Python 3.9 – 3.12** is recommended.
+
+---
 
 ### Q5. Should I use a virtual environment?
-Yes, to avoid version conflicts.
 
-### Q6. I get ModuleNotFoundError. What should I do?
-Install dependencies:
-```
+Yes.  
+Using a Python virtual environment (`venv`) is strongly recommended to avoid dependency conflicts.
+
+---
+
+### Q6. I get `ModuleNotFoundError`. What should I do?
+
+Install the required dependencies:
+
+```bash
 pip install numpy scipy matplotlib pandas pyyaml
 ```
 
+Ensure the correct virtual environment is activated before running any scripts.
+
 ---
 
-# 3. ngspice / SPICE Issues
+## ⚡ 3. ngspice / SPICE Issues
 
-### Q7. ngspice cannot find model file.
-Use forward slashes `/` in .include paths.
+### Q7. ngspice cannot find a model file.
 
-### Q8. Sweep produced only one data point.
-Simulation failed — check .log files.
+Ensure that `.include` paths use **forward slashes (`/`)**, not backslashes (`\`), especially on Windows.
+
+---
+
+### Q8. A sweep produced only one data point.
+
+This usually indicates a **simulation failure**.  
+Check the ngspice `.log` files for convergence or syntax errors.
+
+---
 
 ### Q9. gmmax extraction fails.
-Sweep data incomplete (usually model error).
+
+This typically means the sweep data is incomplete, often due to invalid or non-converging model parameters.
 
 ---
 
-# 4. TCAD Playground Questions
+## 🧪 4. TCAD Playground Questions
 
-### Q10. Poisson solver diverges.
-Try:
-- Reduce doping
-- Increase tox
-- Reduce sweep range
+### Q10. The Poisson solver diverges.
 
-### Q11. Why different from real TCAD?
-These are simplified educational models.
+Try the following mitigation steps:
 
----
-
-# 5. Reliability (HCI/NBTI)
-
-### Q12. Are HCI/NBTI models accurate?
-They are simplified, for trend study and education.
-
-### Q13. Can real data be fitted?
-Yes — adjust A_vth, p_vth, A_id, p_id.
+- Reduce doping concentration  
+- Increase oxide thickness (`tox`)  
+- Reduce the voltage sweep range  
 
 ---
 
-# 6. OpenLane-Lite
+### Q11. Why do results differ from commercial TCAD tools?
 
-### Q14. PDK not found.
-Ensure:
+The TCAD playgrounds use **simplified 1D educational models**.  
+They are intended for **conceptual understanding and trend analysis**, not production-level accuracy.
+
+---
+
+## 🧬 5. Reliability (HCI / NBTI)
+
+### Q12. Are the HCI / NBTI models accurate?
+
+They are **simplified models** designed for education and qualitative trend analysis.
+
+---
+
+### Q13. Can I fit the models to real measurement data?
+
+Yes.  
+You can adjust fitting parameters such as:
+
+- `A_vth`, `p_vth`  
+- `A_id`, `p_id`  
+
+to match experimental degradation data.
+
+---
+
+## 🏗 6. OpenLane-Lite
+
+### Q14. OpenLane-Lite cannot find the PDK.
+
+Ensure the following directory exists:
+
 ```
 openlane-lite/pdks/
 ```
 
-### Q15. Docker issues in WSL2.
-Enable WSL2 backend in Docker Desktop:
-```
+---
+
+### Q15. Docker does not work in WSL2.
+
+Verify that the WSL2 backend is enabled in Docker Desktop and check:
+
+```powershell
 wsl -l -v
 ```
 
+Ensure your Linux distribution is running under **WSL2**.
+
 ---
 
-# 7. Contribution
+## 🤝 7. Contribution
 
-### Q16. How can I contribute?
-Submit Issues or PRs:
+### Q16. How can I contribute to SemiDevKit?
+
+Contributions are welcome via **Issues** or **Pull Requests**:
+
 https://github.com/Samizo-AITL/SemiDevKit
 
 ---
 
-# 8. License
+## 📜 8. License
 
-### Q17. What is the license?
-Hybrid license:
-- MIT for code
-- CC BY / CC BY-SA for text
-- CC BY-NC for figures
+### Q17. What license does SemiDevKit use?
+
+SemiDevKit uses a **hybrid license model**:
+
+- **MIT License** — source code  
+- **CC BY / CC BY 4.0** — documentation text  
+- **CC BY-NC 4.0** — figures and diagrams  
+
+See `license.md` for full details.
 
 ---
 
-# 9. Contact
+## 📬 9. Contact
 
-| 📌 Item | Details |
-|--------|---------|
-| **Name** | Shinichi Samizo |
-| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
+For additional questions or clarifications:
 
+| Item | Details |
+|-----|---------|
+| 👤 Name | **Shinichi Samizo** |
+| 🧑‍💻 GitHub | https://github.com/Samizo-AITL |
+
+---
+
+💡 **If your question is not listed here, feel free to open an Issue on GitHub.**
