@@ -39,31 +39,14 @@
 <body class="semidevkit-root">
 
   {% unless page.url == "/" %}
-  <header class="page-header">
-    <div class="wrapper">
-      <h1 class="site-title">
-        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      </h1>
-      {% if site.description %}
-      <p class="site-description">{{ site.description }}</p>
-      {% endif %}
-    </div>
-  </header>
+
   {% endunless %}
 
   <main class="main-container wrapper">
     {{ content }}
   </main>
 
-  <footer class="page-footer">
-    <div class="wrapper">
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}.</p>
-      <p>
-        Built with <a href="https://jekyllrb.com/">Jekyll</a>
-        &amp; the <a href="https://github.com/jekyll/minima">minima</a> theme.
-      </p>
-    </div>
-  </footer>
+ 
 
 </body>
 </html>
