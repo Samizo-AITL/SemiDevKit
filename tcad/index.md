@@ -3,8 +3,6 @@ layout: default
 title: SemiDevKit
 ---
 
-----
-
 # 🧪 TCAD Playground — Device Physics Simulation
 
 ---
