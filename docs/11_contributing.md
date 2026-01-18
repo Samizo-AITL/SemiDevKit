@@ -3,198 +3,239 @@ layout: default
 title: contributing
 ---
 
-----
+---
 
-# 11_contributing.md
-# Contributing to SemiDevKit
+# 🤝 Contributing Guide — SemiDevKit
 
-Thank you for your interest in contributing to **SemiDevKit**!  
-This project integrates semiconductor device physics, compact modeling, reliability analysis,  
-and physical design flows. High-quality contributions are welcome.
+Thank you for your interest in contributing to **SemiDevKit**!
+
+SemiDevKit integrates **semiconductor device physics, compact modeling, reliability analysis,  
+and physical design workflows**. Contributions that improve **clarity, correctness, usability,  
+or educational value** are highly welcome.
 
 ---
 
-# 1. How to Contribute
+## 🌱 1. Ways to Contribute
 
-There are several ways to contribute:
+There are multiple ways to contribute to the project:
 
-### ✔ 1. Improve documentation
-- Fix typos, unclear explanations, missing diagrams
-- Add tutorials or examples for any module
+### ✔ 1. Improve Documentation
+- Fix typos or unclear explanations
+- Improve structure or wording
+- Add diagrams, tables, or figures
+- Contribute tutorials or example workflows
 
-### ✔ 2. Submit bug reports
-Report issues here:  
+---
+
+### ✔ 2. Submit Bug Reports
+
+Please report issues via GitHub:
+
 https://github.com/Samizo-AITL/SemiDevKit/issues
 
-Include:
-- OS, Python version, ngspice version
-- Exact error message
+When reporting a bug, include:
+- Operating system
+- Python version
+- ngspice version (if applicable)
+- Exact error messages or logs
 - Steps to reproduce
 - Expected vs. actual behavior
 
-### ✔ 3. Add new features
-Examples:
-- New TCAD solvers (2D Poisson, DD-lite)
-- New BSIM analyzers
-- Additional reliability models
-- New PZT material models
-- OpenLane-Lite extensions
+---
 
-### ✔ 4. Improve code quality
-- Refactor scripts
-- Add comments
-- Increase modularity
-- Reduce duplicated code
+### ✔ 3. Add New Features
+
+Examples of welcome feature contributions include:
+- New TCAD solvers (e.g. 2D Poisson, DD-lite)
+- Additional BSIM4 analyzers
+- Extended reliability models
+- New PZT material or ferroelectric models
+- OpenLane-Lite flow enhancements
 
 ---
 
-# 2. Contribution Workflow
+### ✔ 4. Improve Code Quality
+- Refactor existing scripts
+- Add comments and docstrings
+- Improve modularity and readability
+- Reduce duplicated or hard-coded logic
 
-Follow this process when making a contribution:
+---
 
-### **Step 1 — Fork the Repository**
+## 🔁 2. Contribution Workflow
+
+Please follow this standard GitHub workflow:
+
+### Step 1 — Fork the Repository
 ```
 https://github.com/Samizo-AITL/SemiDevKit
 ```
 
-### **Step 2 — Create a Feature Branch**
-```
+---
+
+### Step 2 — Create a Feature Branch
+```bash
 git checkout -b feature/my-new-feature
 ```
 
-### **Step 3 — Make Changes**
-- Follow coding guidelines (below)
-- Test before committing
+---
 
-### **Step 4 — Commit Message Format**
-Use clear and descriptive messages:
+### Step 3 — Make Your Changes
+- Follow the coding and style guidelines (see below)
+- Test your changes locally before committing
+
+---
+
+### Step 4 — Commit Message Guidelines
+
+Use clear, descriptive commit messages:
 
 ```
-Added new MOSCAP CV model
-Fixed ngspice path handling on Windows
-Improved PZT hysteresis visualization
+Add new MOSCAP CV model
+Fix ngspice path handling on Windows
+Improve PZT hysteresis visualization
 ```
 
-### **Step 5 — Push & Create Pull Request**
-```
+---
+
+### Step 5 — Push and Open a Pull Request
+```bash
 git push origin feature/my-new-feature
 ```
 
-Then open a Pull Request on GitHub.
+Then open a **Pull Request** on GitHub with a clear description of your changes.
 
 ---
 
-# 3. Coding Guidelines
+## 🧑‍💻 3. Coding Guidelines
 
 ### ✔ Python
-- Use **PEP8 style** wherever possible
-- Keep scripts small and readable
+- Follow **PEP8** style guidelines where practical
+- Keep scripts short and readable
 - Prefer functions over long procedural code
-- Use `fig/` for images, `results/` for outputs
+- Save plots under `fig/` and data under `results/`
+
+---
 
 ### ✔ SPICE
-- Keep templates under `templates/`
+- Store templates under `templates/`
 - Use `.param` variables instead of hard-coded values
-- Maintain consistency in instance names (`m1`, `dut`, etc.)
+- Keep instance naming consistent (`m1`, `dut`, etc.)
+
+---
 
 ### ✔ Documentation
 - Use Markdown (`.md`)
-- Include diagrams or tables where helpful
-- Keep language **clear and concise**
+- Add tables or diagrams where helpful
+- Keep explanations **clear, concise, and technical**
 
 ---
 
-# 4. Module Design Rules
+## 🧩 4. Module Design Rules
 
-### ✔ Each module must be self-contained  
-No module should rely on files outside its folder.
+To preserve reproducibility and clarity:
 
-### ✔ Use consistent directory names  
-- `run/`
-- `plot/`
-- `models/`
-- `templates/`
-- `results/`
-- `fig/`
-
-### ✔ Do not commit generated results
-Except for demonstration examples.
+- Each module must be **self-contained**
+- Modules must not depend on files outside their directory
+- Use consistent subdirectory names:
+  - `run/`
+  - `plot/`
+  - `models/`
+  - `templates/`
+  - `results/`
+  - `fig/`
+- Do **not** commit generated results, except for small demonstration examples
 
 ---
 
-# 5. Testing Guidelines
+## 🧪 5. Testing Guidelines
 
-Before submitting a PR:
+Before submitting a Pull Request, please verify:
 
 ### ✔ TCAD Playground
-- Run MOSFET & MOSCAP scripts
-- Verify PNG images are generated
-
-### ✔ BSIM4 Analyzer
-- Ensure `.csv`, `.dat`, `.log`, `.png` are produced
-- Check Vth/gm/Ids extraction runs without error
-
-### ✔ Reliability Analyzer
-- Run HCI/NBTI scripts
-- Confirm ΔVth / ΔId curves look correct
-
-### ✔ OpenLane-Lite
-- Ensure Docker script runs
-- Produce GDS in example design
+- MOSFET and MOSCAP scripts execute successfully
+- PNG figures are generated under `fig/`
 
 ---
 
-# 6. Style & Naming Rules
+### ✔ BSIM4 Analyzer
+- `.csv`, `.dat`, `.log`, and `.png` files are generated
+- Vth, gm, and Id extraction completes without error
 
-### ✔ File naming
-Use `lowercase_with_underscores.md`, no spaces.
+---
 
-### ✔ Variable naming
-Use `snake_case` for Python.
+### ✔ Reliability Analyzer
+- HCI / NBTI scripts execute correctly
+- ΔVth and ΔId degradation curves are reasonable
 
-### ✔ Output naming
-Include:
-- node (e.g., 130nm)
-- device (nmos/pmos)
-- mode (vgid/vdid/cv)
-- sweep condition (LT/RT/HT)
+---
 
-Example:
+### ✔ OpenLane-Lite
+- Docker-based flow runs successfully
+- GDS output is produced for the example design
+
+---
+
+## 🎨 6. Style & Naming Conventions
+
+### ✔ File Naming
+- Use `lowercase_with_underscores`
+- No spaces in file names
+
+---
+
+### ✔ Variable Naming
+- Use `snake_case` for Python variables and functions
+
+---
+
+### ✔ Output Naming
+
+Include the following when applicable:
+- Technology node (e.g. `130nm`)
+- Device type (`nmos` / `pmos`)
+- Analysis mode (`vgid`, `vdid`, `cv`)
+- Sweep condition (`LT`, `RT`, `HT`)
+
+**Example:**
 ```
 130nm_nmos_vgid_RT.csv
 ```
 
 ---
 
-# 7. Licensing Rules for Contributions
+## ⚖️ 7. Licensing Rules for Contributions
 
-SemiDevKit uses a **hybrid license**:
+SemiDevKit uses a **hybrid license model**:
 
 | Component | License |
-|----------|---------|
-| Source code | MIT |
+|---------|---------|
+| Source code | MIT License |
 | Documentation | CC BY or CC BY-SA |
 | Figures | CC BY-NC |
 
-By contributing, you agree your contribution will be released under the same hybrid licensing.
+By submitting a contribution, you agree that your work will be released under the same licensing terms.
 
 ---
 
-# 8. Contributor Recognition
+## 🌟 8. Contributor Recognition
 
-Contributors will be credited in:
-
-- GitHub contributors list  
-- SemiDevKit documentation pages  
-- Acknowledgment section in future release notes  
+Contributors may be acknowledged through:
+- GitHub contributor listings
+- SemiDevKit documentation pages
+- Acknowledgment sections in future release notes
 
 ---
 
-# 9. Contact
+## 📬 9. Contact
 
-For discussion before contributing:
+If you would like to discuss an idea before contributing:
 
-| 📌 Item | Details |
-|--------|---------|
-| **Name** | Shinichi Samizo |
-| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
+| Item | Details |
+|-----|---------|
+| 👤 Name | **Shinichi Samizo** |
+| 🧑‍💻 GitHub | https://github.com/Samizo-AITL |
+
+---
+
+🙏 **Thank you for helping improve SemiDevKit!**
