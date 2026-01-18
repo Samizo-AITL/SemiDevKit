@@ -101,7 +101,7 @@ SemiDevKit/
 |------|--------------|------------|
 | 🔬 **Device Physics / TCAD** | [Pages](https://samizo-aitl.github.io/SemiDevKit/tcad/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad) |
 | 🧩 **BSIM4 & SPICE Suite** | [Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim) |
-| 🏗 **OpenLane-Lite** | [Pages](https://samizo-aitl.github.io/SemiDevKit/openlane/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane) |
+| 🏗  **OpenLane-Lite** | [Pages](https://samizo-aitl.github.io/SemiDevKit/openlane/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane) |
 | 📘 **Documentation** | [Pages](https://samizo-aitl.github.io/SemiDevKit/docs/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/docs) |
 
 ---
