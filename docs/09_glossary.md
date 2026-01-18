@@ -3,198 +3,240 @@ layout: default
 title: glossary
 ---
 
-----
+---
 
-# 9_glossary.md
-# SemiDevKit — Glossary of Technical Terms
+# 📘 Glossary of Technical Terms — SemiDevKit
 
-This glossary defines key semiconductor, SPICE, TCAD, and physical‑design terms used across **SemiDevKit**.
+This glossary defines **key semiconductor, SPICE, TCAD, and physical-design terms**  
+used throughout **SemiDevKit**.
 
 ---
 
-# A
+## A
 
 ### **AC Analysis**
-Small‑signal frequency‑domain analysis used to obtain gain, impedance, or frequency response.
+Small-signal, frequency-domain analysis used to evaluate gain, impedance, and frequency response.
+
+---
 
 ### **Anneal**
-Thermal treatment used to activate dopants or modify material properties.
+A thermal process used to activate dopants, repair lattice damage, or modify material properties.
 
 ---
 
-# B
+## B
 
 ### **BSIM4**
-A physics‑based MOSFET compact model widely used in SPICE simulators for deep‑submicron CMOS nodes (130 nm → 20 nm).
+A physics-based MOSFET compact model widely used in SPICE simulators for deep-submicron CMOS technologies  
+(typically from 130 nm down to ~20 nm nodes).
+
+---
 
 ### **Butterfly Curve (S–E Curve)**
-Strain–Electric field curve for ferroelectric or piezoelectric materials.
+Strain–electric-field relationship observed in ferroelectric or piezoelectric materials.
 
 ---
 
-# C
+## C
 
 ### **Cgg**
-Total gate capacitance:  
-Cgg = ∂Qg/∂Vg, physically meaningful compared to partitioned Cgs/Cgd/Cgb.
+Total gate capacitance, defined as:
+
+\[
+C_{gg} = \frac{\partial Q_g}{\partial V_g}
+\]
+
+Physically more meaningful than partitioned capacitances (Cgs, Cgd, Cgb).
+
+---
 
 ### **CV Curve**
-Capacitance–Voltage relation for MOSCAPs or MOSFET gate behavior.
+Capacitance–voltage relationship used to characterize MOS capacitors and MOSFET gate behavior.
+
+---
 
 ### **Compact Model**
-Simplified mathematical representation of device I–V/C–V used in circuit simulators.
+A simplified mathematical representation of device I–V and C–V characteristics used in circuit simulation.
 
 ---
 
-# D
+## D
 
 ### **DIBL (Drain-Induced Barrier Lowering)**
-Reduction of threshold voltage with increasing drain voltage in short‑channel MOSFETs.
+Reduction of threshold voltage with increasing drain voltage in short-channel MOSFETs.
+
+---
 
 ### **DIM (Dimension Sweep)**
-L/W sweep used to study short‑channel and narrow‑width effects.
+A sweep of channel length (L) and width (W) used to study short-channel and narrow-width effects.
 
 ---
 
-# E
+## E
 
 ### **EOT (Equivalent Oxide Thickness)**
-Effective thickness of gate dielectric, accounting for high‑k materials.
+Effective oxide thickness that represents the capacitance of a high-k gate dielectric in terms of SiO₂.
+
+---
 
 ### **Extracted Parameters**
-Measured or simulated device characteristics such as Vth, gmmax, Idlin, Idsat.
+Device characteristics derived from measurement or simulation, such as Vth, gmmax, Idlin, and Idsat.
 
 ---
 
-# F
+## F
 
 ### **Ferroelectric**
-Material exhibiting spontaneous polarization reversible by electric field (used in PZT analysis).
+A material exhibiting spontaneous polarization that can be reversed by an applied electric field.
 
 ---
 
-# G
+## G
 
 ### **gm (Transconductance)**
-Derivative of Id w.r.t Vg. gmmax is often used for Vth extraction.
+Derivative of drain current with respect to gate voltage:
+
+\[
+g_m = \frac{\partial I_d}{\partial V_g}
+\]
+
+The peak value (gmmax) is commonly used for threshold voltage extraction.
 
 ---
 
-# H
+## H
 
 ### **HCI (Hot-Carrier Injection)**
-Reliability degradation mechanism in NMOS due to high‑energy carriers damaging the gate oxide.
+A reliability degradation mechanism in NMOS devices caused by high-energy carriers damaging the gate oxide.
 
 ---
 
-# I
+## I
 
 ### **Idsat**
-Saturation drain current at high Vd.
+Drain current in the saturation region at high drain voltage.
+
+---
 
 ### **Idlin**
-Linear‑region drain current at low Vd.
+Drain current in the linear region at low drain voltage.
 
 ---
 
-# L
+## L
 
 ### **Lateral Electric Field**
-Field along the channel direction; strongly influences hot‑carrier effects.
+Electric field along the channel direction; a major contributor to hot-carrier effects.
+
+---
 
 ### **Layout**
-Geometric representation of circuit shapes for fabrication.
+Geometric representation of circuit structures used for semiconductor fabrication.
 
 ---
 
-# M
+## M
 
 ### **Mobility (μ)**
-Carrier mobility; decreases with vertical field, scattering, and temperature.
+Carrier mobility; typically decreases with increasing vertical electric field, scattering, and temperature.
+
+---
 
 ### **MOSCAP**
-Metal‑Oxide‑Semiconductor capacitor used for CV characterization.
+Metal-Oxide-Semiconductor capacitor, commonly used for CV characterization of gate dielectrics.
 
 ---
 
-# N
+## N
 
 ### **NBTI (Negative Bias Temperature Instability)**
-PMOS reliability degradation mechanism producing negative Vth shift.
+A PMOS reliability degradation mechanism that causes a negative shift in threshold voltage over time.
 
 ---
 
-# O
+## O
 
 ### **OpenLane**
-Open‑source RTL‑to‑GDS flow; OpenLane‑Lite is a reduced version included in SemiDevKit.
+An open-source RTL-to-GDSII digital design flow.  
+**OpenLane-Lite** is a reduced, educational variant included in SemiDevKit.
 
 ---
 
-# P
+## P
 
 ### **Paramus**
-Physical‑to‑BSIM4 model card generator included in SemiDevKit.
+A physical-parameter-based BSIM4 model-card generator included in SemiDevKit.
+
+---
 
 ### **Poisson Equation**
-Governs electrostatic potential inside semiconductor materials; solved in TCAD modules.
+A fundamental equation governing electrostatic potential inside semiconductor materials;  
+solved numerically in TCAD modules.
+
+---
 
 ### **PZT**
-Lead Zirconate Titanate, a ferroelectric/piezoelectric material.
+Lead Zirconate Titanate, a ferroelectric and piezoelectric material widely used in memory and sensor devices.
 
 ---
 
-# R
+## R
 
 ### **Results Directory**
-Folder storing *.csv, *.dat, *.png, and extracted parameters for reproducibility.
+A directory storing generated `.csv`, `.dat`, `.png`, and extracted parameters to ensure reproducibility.
 
 ---
 
-# S
+## S
 
 ### **SCE (Short-Channel Effects)**
-Phenomena degrading device behavior as channel length shrinks.
+Phenomena that degrade MOSFET behavior as channel length is reduced.
+
+---
 
 ### **SPICE**
-Simulation Program with Integrated Circuit Emphasis—industry standard analog simulator.
+Simulation Program with Integrated Circuit Emphasis — an industry-standard circuit simulator.
 
 ---
 
-# T
+## T
 
-### **TCAD (Technology CAD)**
-Device‑level simulation techniques (Poisson, drift‑diffusion, quantum corrections).
+### **TCAD (Technology Computer-Aided Design)**
+Device-level simulation techniques including Poisson, drift-diffusion, and quantum-corrected models.
+
+---
 
 ### **Template**
-SPICE netlist skeleton used by analyzers to generate simulation cases.
+A SPICE netlist skeleton used by analyzers to automatically generate simulation cases.
 
 ---
 
-# V
+## V
 
 ### **Vth (Threshold Voltage)**
-Gate voltage where inversion forms; extracted via gmmax or constant‑current method.
+Gate voltage at which strong inversion forms in a MOSFET.
+
+---
 
 ### **Vtg / Vtc**
-Threshold values extracted via:
-- gmmax peak method (Vtg)
-- constant‑current method (Vtc)
+Threshold voltages extracted using:
+- **Vtg**: gmmax peak method  
+- **Vtc**: constant-current method  
 
 ---
 
-# W
+## W
 
 ### **Width (W)**
-MOSFET conduction width; strongly impacts current and SCE.
+MOSFET conduction width; strongly affects drive current and short-channel behavior.
 
 ---
 
-# Z
+## Z
 
 ### **Zr/Ti Ratio**
-Composition variable in PZT models affecting polarization behavior.
+Composition ratio in PZT materials that significantly influences polarization characteristics.
 
 ---
 
-# End of Glossary
+📘 **End of Glossary**
