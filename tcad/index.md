@@ -80,7 +80,7 @@ Full explanations, derivations, and mathematical formulas are provided under:
 
 ## 📄 License
 
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#---license)
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/tcad/#---license)
 
 | Component | License | Notes |
 |---------|---------|------|
