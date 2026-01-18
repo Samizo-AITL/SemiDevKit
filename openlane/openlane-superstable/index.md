@@ -3,8 +3,6 @@ layout: default
 title: openLane-superstable
 ---
 
-----
-
 # 🚀 OpenLane Superstable — SPM Flow Result  
 **Verified Physical Design Flow (GDS → DEF/LEF → OpenROAD Visualization)**
 
