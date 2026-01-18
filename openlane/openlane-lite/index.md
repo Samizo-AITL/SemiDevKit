@@ -3,8 +3,6 @@ layout: default
 title: openLane-lite
 ---
 
-----
-
 # OpenLane-Lite  
 Minimal educational version of the OpenLane RTL-to-GDSII flow.
 
