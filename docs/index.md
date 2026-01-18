@@ -3,8 +3,6 @@ layout: default
 title: docs
 ---
 
----
-
 # 📘 SemiDevKit Documentation Portal
 
 Welcome to the official documentation portal for **SemiDevKit** —  
