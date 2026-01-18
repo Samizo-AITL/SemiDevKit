@@ -162,29 +162,22 @@ A standard BSIM4 template.
 
 ---
 
-# 📄 **Hybrid License**
-
-Paramus Physical Edition adopts a **hybrid licensing model** designed to handle code, documentation, and figures appropriately.
-
-| Item | License | Description |
-|------|---------|-------------|
-| **Source Code** | MIT License | Free to use, modify, redistribute |
-| **Documentation / Text Materials** | CC BY 4.0 | Attribution required |
-| **Figures / Diagrams / Generated Plots** | CC BY-NC 4.0 | Non-commercial use only |
-| **External References** | Original license applies | Cite sources properly |
-
----
-
-## 📬 Contact
-
-For requests, improvements, or extensions to the physical modeling,  
-please open an Issue in the repository.
-
----
-
 ## 👤 Author
 
-| 📌 Item | Details |
-|--------|---------|
-| **Name** | Shinichi Samizo |
-| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
+| Item | Details |
+|----|--------|
+| 👨‍🔬 Name | **Shinichi Samizo** |
+| 💻 GitHub | [Samizo-AITL](https://github.com/Samizo-AITL) |
+
+---
+
+## 📄 License
+
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#---license)
+
+| Component | License | Notes |
+|---------|---------|------|
+| 💻 Source Code | [**MIT License**](https://opensource.org/licenses/MIT) | Free use / modification |
+| 📄 Text Materials | [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/) / [**CC BY-SA 4.0**](https://creativecommons.org/licenses/by-sa/4.0/) | Attribution required |
+| 🎨 Figures & Diagrams | [**CC BY-NC 4.0**](https://creativecommons.org/licenses/by-nc/4.0/) | Non-commercial only |
+| 🔗 External References | Original license | Proper citation required |
