@@ -94,10 +94,10 @@ SemiDevKit/
 
 | Module | GitHub Pages | Repository |
 |------|--------------|------------|
-| 🔬 Device Physics / TCAD | [Pages](https://samizo-aitl.github.io/SemiDevKit/tcad/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad) |
-| 🧩 BSIM4 & SPICE Suite | [Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim) |
-| 🏗 OpenLane-Lite | [Pages](https://samizo-aitl.github.io/SemiDevKit/openlane/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane) |
-| 📘 Documentation | [Pages](https://samizo-aitl.github.io/SemiDevKit/docs/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/docs) |
+| 🔬 **Device Physics / TCAD** | [Pages](https://samizo-aitl.github.io/SemiDevKit/tcad/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/tcad) |
+| 🧩 **BSIM4 & SPICE Suite** | [Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim) |
+| 🏗 **OpenLane-Lite** | [Pages](https://samizo-aitl.github.io/SemiDevKit/openlane/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/openlane) |
+| 📘 **Documentation** | [Pages](https://samizo-aitl.github.io/SemiDevKit/docs/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/docs) |
 
 ---
 
@@ -180,9 +180,9 @@ Including:
 
 | Component | License | Notes |
 |---------|---------|------|
-| 💻 Source Code | [MIT License](https://opensource.org/licenses/MIT) | Free use / modification |
-| 📄 Text Materials | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | Attribution required |
-| 🎨 Figures & Diagrams | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | Non-commercial only |
+| 💻 Source Code | [**MIT License**](https://opensource.org/licenses/MIT) | Free use / modification |
+| 📄 Text Materials | [**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/) / [**CC BY-SA 4.0**](https://creativecommons.org/licenses/by-sa/4.0/) | Attribution required |
+| 🎨 Figures & Diagrams | [**CC BY-NC 4.0**](https://creativecommons.org/licenses/by-nc/4.0/) | Non-commercial only |
 | 🔗 External References | Original license | Proper citation required |
 
 ---
