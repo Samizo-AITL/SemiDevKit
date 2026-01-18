@@ -267,7 +267,7 @@ commercial MOSFET analysis tools.
 
 ## 📄 License
 
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#---license)
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_dc/#---license)
 
 | Component | License | Notes |
 |---------|---------|------|
