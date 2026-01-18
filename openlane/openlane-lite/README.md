@@ -241,7 +241,7 @@ not affiliated with the original authors.
 
 ## 📄 License
 
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#---license)
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/openlane/openlane-lite/#---license)
 
 | Component | License | Notes |
 |---------|---------|------|
