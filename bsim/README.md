@@ -37,20 +37,15 @@ bsim/
 
 ---
 
-### 🔸 1. Paramus — BSIM4 Parameter Extraction Engine  
-[Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/Paramus/) ｜ [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/Paramus)
+### 🧩 BSIM4 / SPICE Analyzer Modules
 
-### 🔸 2. bsim4_analyzer_dc — DC Characteristics (Vg–Id / Vd–Id)  
-[Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_dc/) ｜ [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_dc)
-
-### 🔸 3. bsim4_analyzer_cv — CV Characteristics (Vg–Cgg etc.)  
-[Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_cv/) ｜ [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_cv)
-
-### 🔸 4. bsim4_analyzer_dim — L/W Scaling Analysis  
-[Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_dim/) ｜ [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_dim)
-
-### 🔸 5. bsim4_analyzer_reliability — NBTI / HCI Aging Simulation  
-[Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_reliability/) ｜ [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_reliability)
+| No. | Module | Purpose | Input | Output | Pages | Repo |
+|----:|--------|---------|-------|--------|-------|------|
+| 1 | **Paramus** | BSIM4 parameter extraction engine | Physical parameters<br>tox / Na / Vfb / μ₀ / L / W | BSIM4 model card<br>(.model) | [Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/Paramus/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/Paramus) |
+| 2 | **bsim4_analyzer_dc** | DC characteristics analysis | BSIM4 model<br>Vg / Vd sweep | Vg–Id / Vd–Id<br>gm / ro | [Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_dc/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_dc) |
+| 3 | **bsim4_analyzer_cv** | CV characteristics analysis | BSIM4 model<br>AC / bias conditions | Vg–Cgg / Cgs / Cgd | [Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_cv/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_cv) |
+| 4 | **bsim4_analyzer_dim** | L/W scaling analysis | BSIM4 model<br>L / W sweep | Geometry scaling trends<br>Short-channel effects | [Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_dim/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_dim) |
+| 5 | **bsim4_analyzer_reliability** | Reliability & aging simulation | Stress conditions<br>NBTI / HCI | Vth shift<br>Degraded I–V | [Pages](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_reliability/) | [Repo](https://github.com/Samizo-AITL/SemiDevKit/tree/main/bsim/bsim4_analyzer_reliability) |
 
 ---
 
