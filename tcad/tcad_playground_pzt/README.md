@@ -241,7 +241,7 @@ Illustrates the nonlinear electromechanical response of PZT films.
 
 ## 📄 License
 
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#---license)
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/tcad/tcad_playground_pzt/#---license)
 
 | Component | License | Notes |
 |---------|---------|------|
