@@ -3,30 +3,35 @@ layout: default
 title: troubleshooting
 ---
 
-----
+---
 
-# 6_troubleshooting.md
+# 🛠 Troubleshooting Guide — SemiDevKit
 
-# SemiDevKit — Troubleshooting Guide
+This document summarizes **common issues encountered when running SemiDevKit modules**, including:
 
-This document summarizes common issues encountered when running **SemiDevKit modules**  
-(TCAD Playgrounds, BSIM4 Analyzers, Paramus Physical Edition, and OpenLane-Lite)  
-and provides recommended solutions.
+- 🧪 TCAD Playgrounds  
+- 📐 BSIM4 Analyzers  
+- 🧮 Paramus Physical Edition  
+- 🏗 OpenLane-Lite  
+
+For most problems, the root cause is related to **environment setup, PATH configuration, or execution order**.
 
 ---
 
-# 1. Python-Related Issues
+## 🐍 1. Python-Related Issues
 
-## 1.1 `ModuleNotFoundError`
-Cause: Required Python packages are not installed.
+### 1.1 `ModuleNotFoundError`
 
-Solution:
+**Cause**  
+Required Python packages are not installed in the active environment.
+
+**Solution**
 
 ```bash
 pip install numpy scipy matplotlib pandas pyyaml
 ```
 
-If your virtual environment is corrupted:
+If the virtual environment is corrupted, recreate it:
 
 ```bash
 deactivate
@@ -37,14 +42,15 @@ source .venv/bin/activate
 
 ---
 
-## 1.2 Virtual environment cannot be activated (Windows PowerShell)
+### 1.2 Virtual environment cannot be activated  
+(Windows PowerShell)
 
-Example error:
+**Example error**
 ```
 execution of scripts is disabled
 ```
 
-Solution:
+**Solution**
 
 ```powershell
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
@@ -52,81 +58,83 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 
 ---
 
-# 2. ngspice Issues
+## ⚡ 2. ngspice Issues
 
-## 2.1 `ngspice: command not found`
+### 2.1 `ngspice: command not found`
 
-Solution (Linux):
+**Solution (Linux / WSL2)**
 
 ```bash
 sudo apt install ngspice
 ```
 
-Solution (Windows native):
+**Solution (Windows native)**
 
 - Add ngspice to **PATH**, or  
 - Use **WSL2**, which is strongly recommended
 
 ---
 
-## 2.2 ngspice cannot open model file
+### 2.2 ngspice cannot open model file
 
-Cause: Incorrect path to `models/*.sp`.
+**Cause**  
+Incorrect path to `models/*.sp`.
 
-Solution:
+**Solution**
 
-- Check `.include "models/...sp"` in your netlist
-- On Windows, **DO NOT use backslashes** → always use `/`
+- Verify `.include "models/...sp"` in the netlist  
+- On Windows, **do not use backslashes (`\`)** — always use `/`
 
 ---
 
-# 3. BSIM Analyzer Issues
+## 📐 3. BSIM Analyzer Issues
 
-## 3.1 VGID/VDID `.csv` not generated
+### 3.1 VG–ID / VD–ID `.csv` not generated
 
-Possible causes:
+**Possible causes**
 
-- `run/run_*.py` stopped due to an ngspice error  
-- `.dat` file is empty
+- `run/run_*.py` terminated due to an ngspice error  
+- Output `.dat` file is empty
 
-Check ngspice logs:
+**Check ngspice logs**
 
 ```bash
 cat results/.../*.log
 ```
 
-Common mistakes:
+**Common mistakes**
 
-- Mismatched model name (`nmos` vs `nmos130`)
-- Incorrect include path
+- Model name mismatch (`nmos` vs `nmos130`)  
+- Incorrect `.include` path
 
 ---
 
-## 3.2 gmmax extraction failure
+### 3.2 gmmax extraction failure
 
-Example error:
+**Example error**
 ```
 ValueError: zero-size array
 ```
 
-Cause: `.dat` contains only one data line → sweep did not run.
+**Cause**  
+The `.dat` file contains only one data point → sweep did not execute.
 
-Usually caused by incorrect `.model` parameters → ngspice failed to converge.
+This usually indicates **ngspice convergence failure** due to invalid `.model` parameters.
 
 ---
 
-# 4. TCAD Playground Issues
+## 🧪 4. TCAD Playground Issues
 
-## 4.1 Matplotlib backend error
+### 4.1 Matplotlib backend error
 
-Solution:
+**Solution**
 
 ```bash
 pip install matplotlib
 sudo apt install python3-tk   # Linux
 ```
 
-On WSL2:
+For WSL2 (headless environment):
 
 ```bash
 export MPLBACKEND=Agg
@@ -134,40 +142,40 @@ export MPLBACKEND=Agg
 
 ---
 
-## 4.2 Overflow / RuntimeWarning during simulation
+### 4.2 Overflow / RuntimeWarning during simulation
 
-Occurs when Poisson or MOSFET 1D model fails to converge.
+Occurs when the **Poisson or MOSFET 1D solver fails to converge**.
 
-Mitigation:
+**Mitigation strategies**
 
-- Reduce doping (`Na = 1e16`)
-- Increase oxide thickness (`tox = 5e-9`)
+- Reduce doping concentration (e.g. `Na = 1e16`)
+- Increase oxide thickness (e.g. `tox = 5e-9`)
 - Reduce voltage sweep range
 
 ---
 
-# 5. OpenLane-Lite Issues
+## 🏗 5. OpenLane-Lite Issues
 
-## 5.1 Docker permission error
+### 5.1 Docker permission error
 
-Example:
+**Example**
 ```
 permission denied: cannot access /var/run/docker.sock
 ```
 
-Fix (Linux):
+**Fix (Linux)**
 
 ```bash
 sudo usermod -aG docker $USER
 ```
 
-Log out → Log in.
+Log out and log back in.
 
 ---
 
-## 5.2 `run_in_docker.sh` cannot execute
+### 5.2 `run_in_docker.sh` cannot execute
 
-Fix:
+**Fix**
 
 ```bash
 chmod +x docker/run_in_docker.sh
@@ -176,43 +184,43 @@ chmod +x scripts/run_flow.sh
 
 ---
 
-## 5.3 PDK not found
+### 5.3 PDK not found
 
-OpenLane-Lite requires the following minimal PDK structure:
+OpenLane-Lite expects the following structure:
 
 ```
 openlane-lite/pdks/...
 ```
 
-Place or symlink your PDK accordingly.
+Ensure that the PDK directory exists or is correctly symlinked.
 
 ---
 
-# 6. Windows / WSL2 Issues
+## 🪟 6. Windows / WSL2 Issues
 
-## 6.1 Cannot access files from Windows Explorer
+### 6.1 Cannot access files from Windows Explorer
 
-WSL2 recommended directory access:
+**Recommended working directory (WSL2)**
 
-WSL Path:
+WSL path:
 ```
 /home/<user>/SemiDevKit
 ```
 
-Windows Explorer:
+Access from Windows Explorer:
 ```
-\\wsl$\\Ubuntu\\home\\<user>\\SemiDevKit
+\\wsl$\Ubuntu\home\<user>\SemiDevKit
 ```
 
 ---
 
-## 6.2 Docker cannot detect WSL backend
+### 6.2 Docker cannot detect WSL backend
 
-Fix:
+**Fix**
 
-1. Open Docker Desktop  
+1. Open **Docker Desktop**  
 2. Settings → General → Enable **Use the WSL2 backend**  
-3. Check WSL version:
+3. Verify WSL version:
 
 ```powershell
 wsl -l -v
@@ -222,23 +230,28 @@ Ensure Ubuntu is running under **WSL2**.
 
 ---
 
-# 7. General Tips
+## 💡 7. General Tips
 
-- Always activate venv before running:
+- Always activate the virtual environment before running tools:
   ```bash
   source .venv/bin/activate
   ```
-- Run Python scripts from the correct directory  
-- Check ngspice `.log` files first when something goes wrong  
-- DO NOT break directory structure  
-- Linux / WSL2 is strongly recommended over Windows native
+- Execute scripts from the **correct directory**
+- Check ngspice `.log` files first when errors occur
+- Do **not** modify the directory structure
+- 🪟 Windows users should prefer **Linux / WSL2** over native execution
 
 ---
 
-# 8. Contact
+## 📬 8. Contact
 
-| 📌 Item | Details |
-|--------|---------|
-| **Name** | Shinichi Samizo |
-| **GitHub** | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-blue?style=for-the-badge&logo=github)](https://github.com/Samizo-AITL) |
+For unresolved issues or questions:
 
+| Item | Details |
+|-----|---------|
+| 👤 Name | **Shinichi Samizo** |
+| 🧑‍💻 GitHub | https://github.com/Samizo-AITL |
+
+---
+
+🧭 **If a problem persists, isolate the module and verify dependencies step by step**
