@@ -239,7 +239,7 @@ Last Update: 2025-01
 
 ## 📄 License
 
-[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/#---license)
+[![Hybrid License](https://img.shields.io/badge/license-Hybrid-blueviolet)](https://samizo-aitl.github.io/SemiDevKit/bsim/bsim4_analyzer_dim/#---license)
 
 | Component | License | Notes |
 |---------|---------|------|
