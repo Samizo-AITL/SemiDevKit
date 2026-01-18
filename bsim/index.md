@@ -3,8 +3,6 @@ layout: default
 title: bsim
 ---
 
-----
-
 # 🧠 BSIM4 Compact Modeling & Device Simulation Suite
 
 ---
