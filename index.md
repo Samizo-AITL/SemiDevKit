@@ -176,7 +176,7 @@ Including:
 | Item | Details |
 |----|--------|
 | 👨‍🔬 Name | **Shinichi Samizo** |
-| 🧠 Expertise | Semiconductor devices (logic, memory, HV mixed-signal)<br>Thin-film piezo actuators (inkjet systems)<br>PrecisionCore printhead productization, BOM, ISO training |
+| 🧠 Expertise | Semiconductor devices (logic, memory, HV mixed-signal)<br>Thin-film piezo actuators (inkjet systems)<br>Printhead productization, BOM, ISO training |
 | 💻 GitHub | [![GitHub](https://img.shields.io/badge/GitHub-Samizo--AITL-black?logo=github)](https://github.com/Samizo-AITL) |
 
 ---
